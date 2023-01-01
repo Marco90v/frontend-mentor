@@ -1,0 +1,77 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background-color: var(--Violet);
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-rows: auto auto auto 50px 90px auto;
+}
+header{
+    background-color: var(--Violet);
+    background-image: url(images/bg-mobile.svg);
+    /* height: 380px; */
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: auto 300px;
+}
+header > img {
+    width: 80%;
+    margin: auto;
+}
+header > div > img{
+    margin: 25px;
+    width: 140px;
+}
+h1, p{
+    text-align: center;
+}
+h1{
+    margin: 0 50px;
+    font-size: 25px;
+}
+p{
+    margin: 15px 25px;
+    font-size: 17px;
+    line-height: 25px;
+}
+button{
+    font-family: 'Poppins', sans-serif;
+    margin: 5px auto;
+    padding: 10px 80px;
+    border-radius: 50px;
+    color: var(--Violet);
+}
+
+/* footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+body > div{
+    margin: auto;
+}
+/* div > img{
+    height: 30px;
+} */
+div > svg{
+    height: 30px;
+    width: 30px;
+    fill: white;
+    margin: 0 10px;
+    border: 1px solid;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: white; }
