@@ -86,7 +86,6 @@ div > svg{
     }
     main{
         grid-template-columns: 60% auto;
-        /* grid-template-rows: 250px 155px 150px 82px 221px; */
         grid-template-rows: 29% 18% 19% 10% auto;
         max-width: 1440px;
         margin: auto;
@@ -109,12 +108,10 @@ div > svg{
     }
     main > h1{
         grid-row: 2/3;
-        /* font-size: 50px; */
         font-size: 2.5rem;
     }
     main > p{
         grid-row: 3/4;
-        /* font-size: 23px; */
         font-size: 1.05rem;
         line-height: 35px;
         margin: 15px 50px;
