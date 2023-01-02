@@ -15,7 +15,7 @@ Puede hacer uso de cualquiera de las tecnologías existentes para lograr el resu
  * Grid
  * Mobile-First
 ## Demo
-https://marco90v.github.io/huddle-landing-page-with-a-single-introductory-section/
+https://marco90v.github.io/fontend-mentor/huddle-landing-page-with-single-introductory-section-master/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio
