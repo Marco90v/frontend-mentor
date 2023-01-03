@@ -1,4 +1,4 @@
-# Frontend Mentor - Huddle landing page with a single introductory section
+# Frontend Mentor - Product preview card component
 
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
@@ -15,7 +15,7 @@ Puede hacer uso de cualquiera de las tecnologías existentes para lograr el resu
  * Grid
  * Mobile-First
 ## Demo
-https://marco90v.github.io/fontend-mentor/huddle-landing-page-with-single-introductory-section-master/
+https://marco90v.github.io/fontend-mentor/product-preview-card-component-main/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio

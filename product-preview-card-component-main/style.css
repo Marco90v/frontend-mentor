@@ -1,0 +1,104 @@
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--Cream);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 30px;
+}
+main{
+    background-color: var(--White);
+    width: 90%;
+    max-width: 337.5px;
+    margin: auto;
+    border-radius: 10px;
+}
+main > picture > img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+main > article{
+    display: grid;
+    grid-row-gap: 20px;
+    margin: 20px;
+    grid-template-rows: auto auto auto auto 50px;
+}
+main > article > span{
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+}
+main > article > h1{
+    color: var(--VeryDarkBlue);
+}
+main > article > h1,
+main > article > section > span:first-child{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+}
+main > article > p{
+    font-size: 0.89rem;
+    line-height: 25px;
+}
+span,p{
+    color: var(--DarkGrayishBlue);
+}
+main > article > section > span:first-child{
+    color: var(--Darkcyan);
+    margin-right: 1rem;
+}
+main > article > section{
+    display: flex;
+    align-items: center;
+}
+main > article > section > span:last-child{
+    font-size: 0.9rem;
+    text-decoration: line-through;
+}
+main > article > button{
+    font-size: 0.9rem;
+    border-radius: 10px;
+    background-color: var(--Darkcyan);
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    font-weight: 700;
+    transition: background-color ease-in-out 0.5s;
+}
+main > article > button:hover{
+    background-color: #1a4031;
+    cursor: pointer;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: black; }
+
+@media (min-width:1440px) {
+    main{
+        max-width: initial;
+        display: grid;
+        max-width: 600px;
+        grid-template-columns: 50% 50%;
+    }
+    main > picture > img{
+        border-radius: 10px 0 0 10px;
+        height: 100%;
+    }
+    main > article{
+        margin: 30px;
+    }
+}
