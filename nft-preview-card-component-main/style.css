@@ -122,5 +122,12 @@ section.profile > img{
     border: solid var(--White) 0.1rem;
     border-radius: 50%;
 }
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
