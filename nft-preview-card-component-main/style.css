@@ -1,0 +1,133 @@
+/* font-family: 'Outfit', sans-serif; */
+
+:root{
+    --SoftBlue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --VeryDarkBlue_main: hsl(217, 54%, 11%);
+    --VeryDarkBlue_card: hsl(216, 50%, 16%);
+    --VeryDarkBlue_line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+main{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--VeryDarkBlue_main);
+    color: var(--White);
+    min-height: 100vh;
+    place-items: center;
+    display: grid;
+}
+div.card{
+    background-color: var(--VeryDarkBlue_card);
+    max-width: 21rem;
+    margin: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
+    row-gap: 1rem;
+    padding: 1.5rem;
+}
+div.contentImg{
+    position: relative;
+    cursor: pointer;
+    background-image: url(images/image-equilibrium.jpg);
+    height: 18rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+    overflow: hidden;
+}
+div.contentImg::before{
+    content: "";
+    background-color: var(--Cyan);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+}
+div.contentImg::after{
+    content: url(images/icon-view.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+}
+div.contentImg:hover::before{
+    opacity: 0.5;
+}
+div.contentImg:hover::after{
+    opacity: 1;
+}
+div.card > h1{
+    font-size: 1.4rem;
+    transition: color ease-in-out 0.25s;
+}
+div.card > h1:hover{
+    color:var(--Cyan);
+    cursor: pointer;
+}
+div.card > p,
+span.time,
+div.name{
+    color: var(--SoftBlue);
+}
+div.name > span{
+    color: var(--White);
+    transition: color ease-in-out 0.25s;
+}
+div.name > span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+span.preci{
+    color: var(--Cyan);
+}
+span.preci,
+span.time{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 0.2rem;
+}
+section.value{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+span.preci::before{
+    content: url(images/icon-ethereum.svg);
+}
+span.time::before{
+    content: url(images/icon-clock.svg);
+}
+div.card > hr{
+    border-bottom: var(--VeryDarkBlue_line) solid 0.1rem;
+}
+section.profile{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+section.profile > img{
+    max-width: 2rem;
+    border: solid var(--White) 0.1rem;
+    border-radius: 50%;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
