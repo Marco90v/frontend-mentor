@@ -119,6 +119,14 @@ button.cancel:hover{
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+footer{
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 @media (min-width:1440px) {
     main{
         background-image: url(images/pattern-background-desktop.svg);
