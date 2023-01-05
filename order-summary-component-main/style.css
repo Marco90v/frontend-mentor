@@ -6,6 +6,7 @@
     --DarkBlue: hsl(223, 47%, 23%);
 }
 *{
+    font-family: 'Red Hat Display', sans-serif;
     margin: 0;
     padding: 0;
     border: 0;
@@ -14,5 +15,115 @@
 body{
     font-family: 'Red Hat Display', sans-serif;
 }
+main{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--PaleBlue);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 100%;
+    max-width: 100%;
+}
+.card{
+    max-width: 28rem;
+    background-color: white;
+    margin: 1.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.card > img{
+    max-width: 100%;
+}
+.card > .content{
+    margin: 1.5rem;
+    /* padding: 1.5rem; */
+    display: grid;
+    row-gap: 1rem;
+    text-align: center;
+}
+.content > h1{
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+.content > h1,
+div.plan{
+    color: var(--DarkBlue);
+}
+.content > p{
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    line-height: 1.5rem;
+    color: var(--DesaturatedBlue);
+}
+.card > .content > .price{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--VeryPaleBlue);
+    border-radius: 1rem;
+    padding: 1rem 0;
+}
+.card > .content > .price > .plan{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+.plan > span{
+    color: var(--DesaturatedBlue);
+    font-weight: 500;
+}
+button.change{
+    background-color: transparent;
+    text-decoration: underline;
+    font-weight: 700;
+    color: var(--BrightBlue);
+    cursor: pointer;
+    transition: color ease-in-out 0.25s;
+}
+button.change:hover{
+    color: hsl(245deg 83% 68%);
+    text-decoration: auto;
+}
+button.proceed{
+    color: white;
+    background-color: var(--BrightBlue);
+    padding: 1rem;
+    border-radius: 0.7rem;
+    font-weight: 900;
+    font-size: 0.9rem;
+    transition: color ease-in-out 0.25s;
+    box-shadow: 0px 1rem 1rem 0.8rem var(--PaleBlue);
+    cursor: pointer;
+    transition: background-color ease-in-out 0.25s;
+}
+button.proceed:hover{
+    background-color: hsl(245deg 83% 68%);
+}
+button.cancel{
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--DesaturatedBlue);
+    cursor: pointer;
+    transition: color ease-in-out 0.25s;
+}
+button.cancel:hover{
+    color: var(--DarkBlue);
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width:1440px) {
+    main{
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+    .content{
+        padding: 0 1.5rem;
+    }
+}
