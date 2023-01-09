@@ -1,0 +1,114 @@
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);    
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--VeryDarkBlue);
+    color: var(--White);
+    font-size: 15px;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+main > div.star{
+    max-width: 22rem;
+    display: grid;
+    gap: 1.5rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: hsl(215deg 22% 15%);
+}
+main > div.thank{
+    justify-items: center;
+}
+main > div > img{
+    background-color: var(--DarkBlue);
+    padding: 0.7rem;
+    border-radius: 50%;
+}
+main > div.thank > img{
+    background-color: transparent;
+    border-radius: initial;
+    padding: initial;
+}
+main > div.thank > h1{
+    font-size: 1.5rem;
+}
+main > div.thank > span{
+    background-color: var(--DarkBlue);
+    padding: 0.5rem;
+    border-radius: 2rem;
+    color: var(--Orange);
+}
+main > div > p{
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+    color: var(--MediumGrey);
+}
+main > div.thank > p{
+    text-align: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    background-color: var(--DarkBlue);
+    color: var(--MediumGrey);
+    padding-top: 0.4rem;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    transition: background-color ease-in-out 0.25s, color ease-in-out 0.25s;
+    cursor: pointer;
+}
+li:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+main > div > button{
+    color: var(--White);
+    background-color: var(--Orange);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: background-color ease-in-out 0.25s, color ease-in-out 0.25s;
+    cursor: pointer;
+}
+main > div > button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+li.active{
+    background-color: var(--LightGrey);
+    color: var(--White);
+}
+main > div.hidden{
+    display: none;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
