@@ -22,6 +22,7 @@ body{
     place-items: center;
 }
 main > div.star{
+    max-width: 22rem;
     display: grid;
     gap: 1.5rem;
     margin: 1.5rem;
@@ -75,6 +76,12 @@ li{
     justify-content: center;
     align-items: center;
     font-size: 0.9rem;
+    transition: background-color ease-in-out 0.25s, color ease-in-out 0.25s;
+    cursor: pointer;
+}
+li:hover{
+    background-color: var(--Orange);
+    color: var(--White);
 }
 main > div > button{
     color: var(--White);
@@ -84,8 +91,18 @@ main > div > button{
     font-weight: 700;
     padding: 1rem;
     border-radius: 2rem;
+    transition: background-color ease-in-out 0.25s, color ease-in-out 0.25s;
+    cursor: pointer;
+}
+main > div > button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
 }
 
+li.active{
+    background-color: var(--LightGrey);
+    color: var(--White);
+}
 main > div.hidden{
     display: none;
 }
