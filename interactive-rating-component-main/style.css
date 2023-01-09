@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
 :root{
     --Orange: hsl(25, 97%, 53%);
     --White: hsl(0, 0%, 100%);
@@ -21,7 +22,8 @@ body{
     display: grid;
     place-items: center;
 }
-main > div.star{
+main > div.star > form > fieldset,
+main > div.thank{
     max-width: 22rem;
     display: grid;
     gap: 1.5rem;
@@ -33,7 +35,7 @@ main > div.star{
 main > div.thank{
     justify-items: center;
 }
-main > div > img{
+main > div > form > fieldset > img{
     background-color: var(--DarkBlue);
     padding: 0.7rem;
     border-radius: 50%;
@@ -52,7 +54,7 @@ main > div.thank > span{
     border-radius: 2rem;
     color: var(--Orange);
 }
-main > div > p{
+main > div > form > fieldset > p{
     font-size: 0.85rem;
     line-height: 1.3rem;
     color: var(--MediumGrey);
@@ -60,30 +62,54 @@ main > div > p{
 main > div.thank > p{
     text-align: center;
 }
-ul{
-    list-style: none;
+.rating-scale{
     display: flex;
     justify-content: space-between;
 }
-li{
-    background-color: var(--DarkBlue);
-    color: var(--MediumGrey);
-    padding-top: 0.4rem;
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
+.radio-container{
+    position: relative;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.9rem;
-    transition: background-color ease-in-out 0.25s, color ease-in-out 0.25s;
+}
+input[type="radio"]{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
     cursor: pointer;
+    z-index: 2;
 }
-li:hover{
+input[type="radio"]:hover~:where(.custom-radio){
     background-color: var(--Orange);
-    color: var(--White);
 }
-main > div > button{
+input[type="radio"]:hover~:where(label){
+    color: var(--white);
+}
+input[type="radio"]:checked~:where(.custom-radio) {
+    background-color: var(--LightGrey);
+}
+input[type="radio"]:checked~:where(label) {
+    color: var(--white);
+}
+.custom-radio{
+    position: absolute;
+    background-color: var(--DarkBlue);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transition: background-color ease-in-out 0.25s;
+}
+.radio-container > label{
+    position: absolute;
+    font-weight: 700;
+    color: var(--MediumGrey);
+    transition: color ease-in-out 0.25s;
+    z-index: 1;
+}
+main > div > form > fieldset > button{
     color: var(--White);
     background-color: var(--Orange);
     text-transform: uppercase;
@@ -94,15 +120,11 @@ main > div > button{
     transition: background-color ease-in-out 0.25s, color ease-in-out 0.25s;
     cursor: pointer;
 }
-main > div > button:hover{
+main > div > form > fieldset > button:hover{
     background-color: var(--White);
     color: var(--Orange);
 }
 
-li.active{
-    background-color: var(--LightGrey);
-    color: var(--White);
-}
 main > div.hidden{
     display: none;
 }
