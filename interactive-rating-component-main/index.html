@@ -5,31 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive rating component</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <main>
     <div class="star">
-      <img src="images/icon-star.svg" alt="link" srcset="images/icon-star.svg">
-      <h1>
-        How did we do?
-      </h1>
-      <p>
-        Please let us know how we did with your support request. All feedback is appreciated 
-        to help us improve our offering!
-      </p>
-      <ul>
-        <li id="1">1</li>
-        <li id="2">2</li>
-        <li id="3">3</li>
-        <li id="4">4</li>
-        <li id="5">5</li>
-      </ul>
-      <button>
-        Submit
-      </button>  
+      <form action="/index.html" method="POST" id="form">
+        <fieldset>
+          <img src="images/icon-star.svg" alt="link" srcset="images/icon-star.svg">
+          <h1>
+            How did we do?
+          </h1>
+          <p>
+            Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!
+          </p>
+          <div class="rating-scale" id="rating-scale">
+            <div class="radio-container">
+              <input type="radio" value="1" name="rating" id="1" required />
+              <span class="custom-radio"></span>
+              <label for="1">1</label>
+            </div>
+            <div class="radio-container">
+              <input type="radio" value="2" name="rating" id="2" />
+              <span class="custom-radio"></span>
+              <label for="2">2</label>
+            </div>
+            <div class="radio-container">
+              <input type="radio" value="3" name="rating" id="3" />
+              <span class="custom-radio"></span>
+              <label for="3">3</label>
+            </div>
+            <div class="radio-container">
+              <input type="radio" value="4" name="rating" id="4" />
+              <span class="custom-radio"></span>
+              <label for="4">4</label>
+            </div>
+            <div class="radio-container">
+              <input type="radio" value="5" name="rating" id="5" />
+              <span class="custom-radio"></span>
+              <label for="5">5</label>
+            </div>
+          </div>
+          <button>
+            Submit
+          </button>
+        </fieldset>
+      </form>
     </div>
 
     <div class="star thank hidden">
