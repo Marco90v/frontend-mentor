@@ -4,13 +4,14 @@ The projects are located inside this folder as in other repositories of this sam
 
 ## Main
 
-- [Stats preview card component](https://marco90v.github.io/fontend-mentor/stats-preview-card-component-main/)
+- [Stats preview card component](https://github.com/Marco90v/fontend-mentor/tree/master/stats-preview-card-component-main)
 - [Huddle landing page with a single introductory section](https://github.com/Marco90v/fontend-mentor/tree/master/huddle-landing-page-with-single-introductory-section-master)
 - [Interactive rating component](https://github.com/Marco90v/fontend-mentor/tree/master/interactive-rating-component-main)
 - [NFT preview card component](https://github.com/Marco90v/fontend-mentor/tree/master/nft-preview-card-component-main)
 - [Order summary card](https://github.com/Marco90v/fontend-mentor/tree/master/order-summary-component-main)
 - [Product preview card component](https://github.com/Marco90v/fontend-mentor/tree/master/product-preview-card-component-main)
 - [QR code component](https://github.com/Marco90v/fontend-mentor/tree/master/qr-code-component-main)
+- [Profile card component](https://github.com/Marco90v/fontend-mentor/tree/master/profile-card-component-main)
 
 
 ## Other

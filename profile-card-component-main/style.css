@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --DarkCyan: hsl(185, 75%, 39%);
+    --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --DarkGrayishBlue: hsl(227, 10%, 46%);
+    --DarkGray: hsl(0, 0%, 59%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+    background-color: var(--DarkCyan);
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > img{
+    position: absolute;
+    width: 100%;
+}
+.card{
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 5rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.header-content{
+    position: relative;
+}
+.header-content > img:first-child{
+    max-width: 100%;
+}
+.header-content > img:nth-child(2){
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    top: 60%;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.4rem;
+    transform: translateX(-50%);
+}
+.card-body{
+    display: grid;
+    row-gap: 1.5rem;
+}
+.data{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.name{
+    font-size: 1.2rem;
+}
+.name, .total{
+    color: var(--VeryDarkDesaturatedBlue);
+}
+.age{
+    font-weight: 400;
+}
+.city, .age{
+    color: var(--DarkGrayishBlue);
+}
+.city{
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+hr{
+    border-top: 0.1rem solid var(--DarkGray);
+    opacity: 30%;
+}
+.summary{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 1.5rem;
+}
+.summary > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.3rem;
+}
+.total{
+    font-weight: 700;
+}
+.title{
+    font-weight: 400;
+    color: var(--DarkGrayishBlue);
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
