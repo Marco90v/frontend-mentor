@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+:root{
+    --BrightOrange: hsl(31, 77%, 52%);
+    --DarkCyan: hsl(184, 100%, 22%);
+    --VeryDarkCyan: hsl(179, 100%, 13%);
+    --TransparentWhite: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --VeryLightGray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    /* font-family: 'Big Shoulders Display', cursive; */
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+    /* color:white; */
+    background-color: var(--VeryLightGray);
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    max-width: 330px;
+    margin: 2rem 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.sedans{
+    background-color: var(--BrightOrange);
+}
+.suvs{
+    background-color: var(--DarkCyan);
+}
+.luxury{
+    background-color: var(--VeryDarkCyan);
+}
+.sedans, .suvs, .luxury{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    padding: 3rem;
+    row-gap: 2rem;
+}
+.sedans > button{
+    color: var(--BrightOrange);
+}
+.suvs > button{
+    color: var(--DarkCyan);
+}
+.luxury > button{
+    color: var(--VeryDarkCyan);
+}
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    color: var(--VeryLightGray);
+}
+p{
+    line-height: 1.5rem;
+    color: var(--TransparentWhite);
+}
+button{
+    font-weight: 600;
+    border-radius: 2rem;
+    margin-right: 5rem;
+    padding: 1rem;
+    background-color: var(--VeryLightGray);
+    border: 0.2rem solid var(--VeryLightGray);
+    transition: background-color ease-in-out 0.25s, color ease-in-out 0.25s;
+}
+button:hover{
+    border: 0.2rem solid var(--VeryLightGray);
+    background-color: transparent;
+    color: var(--VeryLightGray);
+    cursor: pointer;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (min-width: 1024px) {
+    .card{
+        max-width: 1000px;
+        display: flex;
+    }
+    button{
+        margin-top: 3rem;
+    }
+}
