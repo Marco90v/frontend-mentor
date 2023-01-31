@@ -1,4 +1,4 @@
-# Frontend Mentor - QR code component
+# Frontend Mentor - Huddle landing page with a single introductory section
 
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
@@ -16,10 +16,8 @@ Puede hacer uso de cualquiera de las tecnologías existentes para lograr el resu
  * Flex
  * Mobile-First
 ## Demo
-https://marco90v.github.io/fontend-mentor/profile-card-component-main/
+https://marco90v.github.io/fontend-mentor/3-column-preview-card-component-main/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio
-# Frontend Mentor - Profile card component
-
-![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
+https://marco90v.github.io/Portafolio/
