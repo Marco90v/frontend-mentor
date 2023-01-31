@@ -11,6 +11,7 @@ The projects are located inside this folder as in other repositories of this sam
 - [Order summary card](https://github.com/Marco90v/fontend-mentor/tree/master/order-summary-component-main)
 - [Product preview card component](https://github.com/Marco90v/fontend-mentor/tree/master/product-preview-card-component-main)
 - [QR code component](https://github.com/Marco90v/fontend-mentor/tree/master/qr-code-component-main)
+- [Profile card component](https://github.com/Marco90v/fontend-mentor/tree/master/profile-card-component-main)
 
 
 ## Other
