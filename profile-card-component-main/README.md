@@ -13,9 +13,10 @@ Puede hacer uso de cualquiera de las tecnologías existentes para lograr el resu
  * HTML
  * CSS
  * Grid
+ * Flex
  * Mobile-First
 ## Demo
-https://marco90v.github.io/fontend-mentor/qr-code-component-main/
+https://marco90v.github.io/fontend-mentor/profile-card-component-main/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio
