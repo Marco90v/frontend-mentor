@@ -7,27 +7,40 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  We're coming soon
+  <main>
+    <div class="logo">
+      <img src="images/logo.svg" alt="log">
+    </div>
+    <div class="banner">
+      <picture>
+        <source media="(min-width:1024px)" srcset="images/hero-desktop.jpg">
+        <img src="images/hero-mobile.jpg" alt="banner">
+        <!-- <img src="images/hero-desktop.jpg" alt="banner"> -->
+      </picture>
+    </div>
+    <div class="content">
+      <h1>We're coming soon</h1>
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <div class="input-email">
+        <input type="email" name="email" id="email" placeholder="Email Address">
+        <button id="send" class="send-button"></button>
+      </div>
+    </div>
+  </main>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
-  <footer>
+  <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer> -->
 </body>
 </html>
