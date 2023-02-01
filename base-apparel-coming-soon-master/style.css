@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+:root{
+    --DesaturatedRed: hsl(0, 36%, 70%);
+    --SoftRed: hsl(0, 93%, 68%);
+    --DarkGrayishRed: hsl(0, 6%, 24%);
+    /* -Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+    -Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%); */
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
