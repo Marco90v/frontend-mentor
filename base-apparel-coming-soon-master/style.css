@@ -17,6 +17,59 @@
 body{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    /* background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); */
+}
+main{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 5rem 16rem auto;
+}
+.logo > img{
+    margin: 1.8rem;
+    height: 1.5rem;
+}
+.content{
+    text-align: center;
+    margin: 4rem 2rem;
+}
+.content > h1{
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: var(--DarkGrayishRed);
+}
+.content > h1 > span{
+    font-weight: 300;
+    color: var(--DesaturatedRed);
+}
+.content > p{
+    margin: 2rem 0;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--DesaturatedRed);
+}
+.input-email > input::placeholder{
+    color: var(--DesaturatedRed);
+}
+.input-email{
+    position: relative;
+}
+.input-email > input{
+    border: 1px solid var(--DesaturatedRed);
+    background-color: transparent;
+    color: var(--DesaturatedRed);
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    width: 100%;
+}
+.input-email > button{
+    position: absolute;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 1rem 1.7rem;
+    border-radius: 2rem;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
