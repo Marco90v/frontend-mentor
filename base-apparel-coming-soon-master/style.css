@@ -18,7 +18,6 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-    /* background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); */
 }
 main{
     min-height: 100vh;
@@ -51,10 +50,15 @@ main{
 .input-email > input::placeholder{
     color: var(--DesaturatedRed);
 }
+.input-email > input:active,
+.input-email > input:focus{
+    border: 2px solid var(--SoftRed);
+}
 .input-email{
     position: relative;
 }
 .input-email > input{
+    outline: none;
     border: 1px solid var(--DesaturatedRed);
     background-color: transparent;
     color: var(--DesaturatedRed);
@@ -73,3 +77,59 @@ main{
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width:376px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        max-width: 375px;
+    }
+}
+
+@media (min-width:1440px) {
+    body{
+        display: initial;
+    }
+    main{
+        grid-template-columns: auto auto;
+        grid-template-rows: 8rem auto;
+        max-width: 100%;
+        background: url(images/bg-pattern-desktop.svg) no-repeat;
+        background-size: calc(100% - 622px);
+    }
+    .logo{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .logo > img{
+        margin: 10rem;
+    }
+    .banner{
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+    .banner > picture > img{
+        height: 100%;
+    }
+    .content{
+        padding: 4rem 14rem 0 8rem;
+        text-align: left;
+    }
+    .content > h1{
+        font-size: 4rem;
+    }
+    .input-email > button{
+        padding: 1rem 2.5rem;
+        cursor: pointer;
+        transition: all ease-in-out 0.25s;
+    }
+    .input-email > button:hover{
+        background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+        transform: scale(1.1);
+        box-shadow: 5px 5px 10px 0px var(--DesaturatedRed);
+    }
+}
