@@ -3,8 +3,6 @@
     --DesaturatedRed: hsl(0, 36%, 70%);
     --SoftRed: hsl(0, 93%, 68%);
     --DarkGrayishRed: hsl(0, 6%, 24%);
-    /* -Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
-    -Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%); */
 }
 *,
 *::after,
@@ -47,17 +45,17 @@ main{
     font-size: 0.9rem;
     color: var(--DesaturatedRed);
 }
-.input-email > input::placeholder{
+.input-email form > input::placeholder{
     color: var(--DesaturatedRed);
 }
-.input-email > input:active,
-.input-email > input:focus{
+.input-email form > input:active,
+.input-email form > input:focus{
     border: 2px solid var(--SoftRed);
 }
 .input-email{
     position: relative;
 }
-.input-email > input{
+.input-email form > input{
     outline: none;
     border: 1px solid var(--DesaturatedRed);
     background-color: transparent;
@@ -66,7 +64,7 @@ main{
     border-radius: 2rem;
     width: 100%;
 }
-.input-email > button{
+.input-email form > button{
     position: absolute;
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     top: 0;
@@ -74,6 +72,20 @@ main{
     height: 100%;
     padding: 1rem 1.7rem;
     border-radius: 2rem;
+}
+.input-email form > img{
+    position: absolute;
+    top: 0.8rem;
+    right: 7rem;
+}
+.input-email form > span{
+    position: absolute;
+    left: 1.3rem;
+    bottom: -2rem;
+    color: var(--SoftRed);
+}
+.hidden{
+    display: none;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -90,9 +102,6 @@ main{
 }
 
 @media (min-width:1440px) {
-    body{
-        display: initial;
-    }
     main{
         grid-template-columns: auto auto;
         grid-template-rows: 8rem auto;
@@ -122,12 +131,12 @@ main{
     .content > h1{
         font-size: 4rem;
     }
-    .input-email > button{
+    .input-email form > button{
         padding: 1rem 2.5rem;
         cursor: pointer;
         transition: all ease-in-out 0.25s;
     }
-    .input-email > button:hover{
+    .input-email form > button:hover{
         background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
         transform: scale(1.1);
         box-shadow: 5px 5px 10px 0px var(--DesaturatedRed);
