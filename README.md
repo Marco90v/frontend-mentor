@@ -4,6 +4,7 @@ The projects are located inside this folder as in other repositories of this sam
 
 ## Main
 
+- [Single price grid component](https://github.com/Marco90v/fontend-mentor/tree/master/single-price-grid-component-master)
 - [Base Apparel coming soon page](https://github.com/Marco90v/fontend-mentor/tree/master/base-apparel-coming-soon-master)
 - [3-column preview card component](https://github.com/Marco90v/fontend-mentor/tree/master/3-column-preview-card-component-main)
 - [Profile card component](https://github.com/Marco90v/fontend-mentor/tree/master/profile-card-component-main)
