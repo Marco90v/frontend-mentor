@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 14rem auto;
+    padding: 5rem 2rem;
+    max-width: 375px;
+}
+.title{
+    text-align: center;
+    color: var(--VeryDarkBlue);
+}
+.title > span{
+    font-size: 1.5rem;
+}
+.title > h1{
+    font-size: 1.55rem;
+}
+.title > p{
+    margin-top: 1rem;
+    color: var(--GrayishBlue);
+}
+main > .content{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 2rem;
+}
+div.card{
+    box-shadow: 0rem 0.6rem 2rem -1rem var(--GrayishBlue);
+    border-radius: 0.5rem;
+    border-top: 0.3rem solid transparent;
+    color: var(--VeryDarkBlue);
+    padding: 1rem 2rem;
+}
+div.card > h2{
+    font-size: 1.2rem;
+}
+div.card > p{
+    font-size: 0.8rem;
+    color: var(--GrayishBlue);
+    margin-top: 0.5rem;
+}
+div.card > img{
+    float: right;
+    margin: 1rem 0;
+}
+div#c1{
+    border-top: 0.3rem solid var(--Cyan);
+}
+div#c2{
+    border-top-color: var(--Red);
+}
+div#c3{
+    border-top-color: var(--Orange);
+}
+div#c4{
+    border-top-color: var(--Blue);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (min-width:1024px) {
+    main{
+        grid-template-rows: 11rem auto;
+        max-width: 62rem;
+    }
+    .title > span{
+        font-size: 1.84rem;
+    }
+    .title > h1{
+        font-size: 1.9rem;
+    }
+    .title > p{
+        display: inline-block;
+        font-size: 0.8rem;
+        width: 28rem;
+    }
+    main > .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
+        column-gap: 2rem;
+    }
+    div#c1{
+        grid-row: 1/3;
+        grid-column: 1/2;
+    }
+    div#c4{
+        grid-row: 1/3;
+        grid-column: 3/4;
+    }
+}
