@@ -16,6 +16,94 @@
 }
 body{
     font-family: 'League Spartan', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+    max-width: 375px;
+    margin: auto;
+}
+.top{
+    display: grid;
+}
+.info{
+    text-align: center;
+}
+.info > h1{
+    color: var(--VeryDarkMagenta);
+    margin: 2rem;
+}
+.info > p{
+    font-size: 1.1rem;
+    color: var(--DarkGrayishMagenta);
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+.rated{
+    display: grid;
+    row-gap: 1rem;
+    margin: 2rem 0;
+}
+.cardRated{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--LightGrayishMagenta);
+}
+.cardRated > span{
+    color: var(--VeryDarkMagenta);
+    font-weight: 700;
+}
+.start{
+    display: flex;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+.bottom{
+    margin: 1rem 0;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 1rem;
+}
+.cardComment{
+    display: grid;
+    grid-template-columns: 5rem auto;
+    grid-template-rows: auto auto;
+    padding: 2rem;
+    row-gap: 1.5rem;
+    align-items: center;
+    background-color: var(--VeryDarkMagenta);
+    color: var(--White);
+    border-radius: 0.5rem;
+}
+.cardComment > img{
+    width: 50px;
+    border-radius: 50%;
+}
+.cardComment > p{
+    grid-column: 1/3;
+    font-weight: 500;
+}
+.data > h2{
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+.data > span{
+    color: var(--SoftPink);
+}
+.cardComment > p{
+    line-height: 1.5rem;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .attribution {
     font-size: 11px;
