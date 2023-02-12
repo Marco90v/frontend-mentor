@@ -112,3 +112,55 @@ footer{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+@media (min-width:1440px) {
+    body{
+        max-width: 1440px;
+        padding: 0 10rem;
+    }
+    .top{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .info{
+        margin: 2rem 9rem 0 0;
+        text-align: left;
+    }
+    .info > h1{
+        /* margin: 0 10rem 0 0; */
+        margin: 0;
+        font-size: 3rem;
+    }
+    .info > p{
+        margin-top: 2rem;
+    }
+    .rated{
+        justify-content: right;
+    }
+    .cardRated{
+        grid-template-rows: 1fr;
+        grid-template-columns: 12rem 1fr;
+        width: 28rem;
+    }
+    .cardRated:nth-child(1){
+        margin-left: -7rem;
+    }
+    .cardRated:nth-child(2){
+        margin-left: -3.5rem;
+    }
+    .bottom{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+        margin: 3rem 0 0 0;
+        padding-top: 2rem;
+    }
+    .cardComment{
+        max-height: 234px;
+    }
+    .cardComment:nth-child(1){
+        margin-top: -2rem;
+    }
+    .cardComment:nth-child(2){
+        margin-top: -1rem;
+    }
+}
