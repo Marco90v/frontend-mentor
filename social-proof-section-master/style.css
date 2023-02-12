@@ -23,6 +23,9 @@ body{
     min-height: 100vh;
     max-width: 375px;
     margin: auto;
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 0 top 0, bottom 0 right 0;
 }
 .top{
     display: grid;
@@ -116,6 +119,9 @@ footer{
     body{
         max-width: 1440px;
         padding: 0 10rem;
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: left 0 top 0, bottom 0 right 0;
     }
     .top{
         grid-template-rows: 1fr;
