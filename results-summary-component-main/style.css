@@ -86,28 +86,28 @@ div.nameData{
     grid-template-columns: auto 1fr;
     column-gap: 1rem;
 }
-li.reaction{
+li.Reaction{
     background-color: var(--LightRedOpacity);
 }
-li.reaction > div.nameData > h4{
+li.Reaction > div.nameData > h4{
     color: var(--LightRed);
 }
-li.memory{
+li.Memory{
     background-color: var(--OrangeyYellowOpacity);
 }
-li.memory > div.nameData > h4{
+li.Memory > div.nameData > h4{
     color: var(--OrangeyYellow);
 }
-li.verbal{
+li.Verbal{
     background-color: var(--GreenTealOpacity);
 }
-li.verbal > div.nameData > h4{
+li.Verbal > div.nameData > h4{
     color: var(--GreenTeal);
 }
-li.visual{
+li.Visual{
     background-color: var(--CobaltBlueOpacity);
 }
-li.visual > div.nameData > h4{
+li.Visual > div.nameData > h4{
     color: var(--CobaltBlue);
 }
 h1{
