@@ -6,8 +6,8 @@
         const newElement = `
             <li class="${category}">
                 <div class="nameData">
-                    <img src=${icon}>
-                    <h4>${category}</h4>
+                    <img src=${icon} alt=${category} >
+                    <span>${category}</span>
                 </div>
                 <div class="data">
                     <p>${score}<span> / 100</span></p>
