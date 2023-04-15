@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap');
+:root{
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeyYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+
+    --LightRedOpacity: hsla(0, 100%, 67%, 0.05);
+    --OrangeyYellowOpacity: hsl(39, 100%, 56%, 0.05);
+    --GreenTealOpacity: hsl(166, 100%, 37%, 0.05);
+    --CobaltBlueOpacity: hsl(234, 85%, 45%, 0.05);
+
+    --LighSlateBlue_background: hsl(252, 100%, 67%);
+    --LightRoyalBlue_background: hsl(241, 81%, 54%);
+
+    --VioletBlue_circle: hsla(256, 72%, 46%, 1);
+    --PersianBlue_circle: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Hanken Grotesk';
+    font-size: 16px;
+}
+section.result{
+    background: linear-gradient(180deg, var(--LighSlateBlue_background),  var(--LightRoyalBlue_background) 100%);
+    color: var(--LightLavender);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    align-items: center;
+    text-align: center;
+    border-radius: 0 0 2rem 2rem;
+}
+section.result > p{
+    margin: 0.5rem 0;
+}
+div.circle{
+    background: linear-gradient(180deg, var(--VioletBlue_circle),  var(--PersianBlue_circle) 100%);
+    border-radius: 100%;
+    position: relative;
+    padding: 4.5rem;
+    margin: 1.5rem;
+}
+div.average{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+div.average > span:first-child{
+    color: var(--White);
+    font-weight: 900;
+    font-size: 4rem;
+}
+h2{
+    color: var(--White);
+}
+section.summary{
+    margin: 2rem;
+}
+ul{
+    list-style: none    ;
+}
+li{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+}
+div.nameData{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+}
+li.Reaction{
+    background-color: var(--LightRedOpacity);
+}
+li.Reaction > div.nameData > h4{
+    color: var(--LightRed);
+}
+li.Memory{
+    background-color: var(--OrangeyYellowOpacity);
+}
+li.Memory > div.nameData > h4{
+    color: var(--OrangeyYellow);
+}
+li.Verbal{
+    background-color: var(--GreenTealOpacity);
+}
+li.Verbal > div.nameData > h4{
+    color: var(--GreenTeal);
+}
+li.Visual{
+    background-color: var(--CobaltBlueOpacity);
+}
+li.Visual > div.nameData > h4{
+    color: var(--CobaltBlue);
+}
+h1{
+    color: var(--DarkGrayBlue);
+    font-size: 1.2rem;
+}
+div.data{
+    font-weight: bold;
+}
+div.data > p > span{
+    color: var(--DarkGrayBlue);
+}
+section.summary > button{
+    background-color: var(--DarkGrayBlue);
+    color: var(--White);
+    font-weight: bold;
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    cursor:pointer;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 768px) {
+    main{
+        max-width: 768px;
+        min-width: 768px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0.1rem 0.1rem 1rem 0.5rem var(--PaleBlue);
+        border-radius: 2rem;
+    }
+    section.result{
+        border-radius: 2rem;
+    }
+    section.result > p {
+        margin: 1rem 0;
+    }
+    div.circle{
+        padding: 5.5rem;
+    }
+    section.summary{
+        border-radius: 0 2rem 2rem 0;
+    }
+    section.summary > button:hover{
+        background: linear-gradient(180deg, var(--LighSlateBlue_background),  var(--LightRoyalBlue_background) 100%);
+    }
+}

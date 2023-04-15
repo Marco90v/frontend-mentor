@@ -4,6 +4,7 @@ The projects are located inside this folder as in other repositories of this sam
 
 ## Main
 
+- [Results summary component](https://github.com/Marco90v/fontend-mentor/tree/master/results-summary-component-main)
 - [Social proof section](https://github.com/Marco90v/fontend-mentor/tree/master/social-proof-section-master)
 - [Four card feature section](https://github.com/Marco90v/fontend-mentor/tree/master/four-card-feature-section-master)
 - [Single price grid component](https://github.com/Marco90v/fontend-mentor/tree/master/single-price-grid-component-master)
