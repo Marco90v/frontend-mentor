@@ -128,6 +128,7 @@ section.summary > button{
     padding: 1.2rem;
     border-radius: 2rem;
     font-size: 1.2rem;
+    cursor:pointer;
 }
 footer{
     position: absolute;
@@ -137,3 +138,33 @@ footer{
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 768px) {
+    main{
+        max-width: 768px;
+        min-width: 768px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0.1rem 0.1rem 1rem 0.5rem var(--PaleBlue);
+        border-radius: 2rem;
+    }
+    section.result{
+        border-radius: 2rem;
+    }
+    section.result > p {
+        margin: 1rem 0;
+    }
+    div.circle{
+        padding: 5.5rem;
+    }
+    section.summary{
+        border-radius: 0 2rem 2rem 0;
+    }
+    section.summary > button:hover{
+        background: linear-gradient(180deg, var(--LighSlateBlue_background),  var(--LightRoyalBlue_background) 100%);
+    }
+}
