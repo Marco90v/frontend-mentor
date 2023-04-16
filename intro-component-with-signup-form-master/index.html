@@ -21,11 +21,27 @@
         Try it free 7 days 
         <span>then $20/mo. thereafter</span>
       </button>
-      <form action="">
-        <input type="text" name="" id="" placeholder="First Name">
-        <input type="text" name="" id="" placeholder="Last Name">
-        <input type="text" name="" id="" placeholder="Email Address">
-        <input type="text" name="" id="" placeholder="Password">
+      <form>
+        <div>
+          <input type="text" name="FirstName" id="FirstName" placeholder="First Name">
+          <img src="./images/icon-error.svg" alt="error">
+          <span>First Name cannot be empty</span>
+        </div>
+        <div>
+          <input type="text" name="LastName" id="LastName" placeholder="Last Name">
+          <img src="./images/icon-error.svg" alt="error">
+          <span>Last Name cannot be empty</span>
+        </div>
+        <div>
+          <input type="text" name="EmailAddress" id="EmailAddress" placeholder="Email Address">
+          <img src="./images/icon-error.svg" alt="error">
+          <span>Looks like this is not an email</span>
+        </div>
+        <div>
+          <input type="text" name="Password" id="Password" placeholder="Password">
+          <img src="./images/icon-error.svg" alt="error">
+          <span>Password cannot be empty</span>
+        </div>
         <button>Claim your free trial</button>
         <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
       </form>
@@ -37,5 +53,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -55,13 +55,36 @@ section.formData > form{
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 0.1rem 0.1rem hsl(249deg 10% 26% / 30%);
 }
-section.formData > form > input {
+section.formData > form > div{
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    margin-bottom: 1rem;
+}
+section.formData > form > div > input {
     border: 0.1rem solid hsl(246deg 25% 77% / 50%);
     padding: 1rem;
     border-radius: 0.3rem;
     font-weight: bold;
-    margin-bottom: 1rem;
     width: 100%;
+}
+section.formData > form > div > img{
+    position: absolute;
+    right: 1.5rem;
+    top: 19%;
+    display: none;
+}
+section.formData > form > div > span{
+    color: var(--Red);
+    font-style: italic;
+    text-align: right;
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+    display: none;
+}
+section.formData > form > div.error > img,
+section.formData > form > div.error > span{
+    display: initial;
 }
 section.formData > form > button{
     width: 100%;
@@ -74,6 +97,10 @@ section.formData > form > button{
     border-radius: 0.3rem;
     box-shadow: 0 0.2rem 0.1rem 0.1rem hsl(154deg 57.21% 45.58%);
     cursor:pointer; 
+    transition: background-color 0.25s ease-in-out;
+}
+section.formData > form > button:hover{
+    background-color: hsl(154deg 59% 51% / 70%);
 }
 section.formData > form > p{
     color: var(--GrayishBlue);
@@ -83,6 +110,10 @@ section.formData > form > p{
 }
 section.formData > form > p > span{
     color: var(--Red);
+}
+section.formData > form > div.error > input{
+    border-color: var(--Red);
+    border-width: 0.15rem;
 }
 footer{
     display: none;
