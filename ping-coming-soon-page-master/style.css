@@ -62,6 +62,7 @@ form > button{
     border-radius: 10rem;
     box-shadow: 0 0.3rem 0.6rem 0.1rem var(--PaleBlue);
     cursor: pointer;
+    transition: background-color 0.25s ease-in-out;
 }
 div.illustration-dashboard{
     padding: 0rem 1.5rem;
@@ -102,3 +103,24 @@ footer{
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width:1024px) {
+    main{
+        max-width: 768px;
+    }
+    h1{
+        font-size: 2rem;
+        margin: 1.5rem 1.5rem 0.5rem 1.5rem;
+    }
+    form{
+        display: grid;
+        grid-template-columns: 1fr 12rem;
+        column-gap: 1rem;
+    }
+    div.illustration-dashboard{
+        padding: 0rem 3rem;
+    }
+    form > button:hover{
+        background-color: hsl(223deg 87% 63% / 90%);
+    }
+}
