@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap');
+:root{
+    --Blue: hsl(223, 87%, 63%);
+    --PaleBlue: hsl(223, 100%, 88%);
+    --LightRed: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --VeryDarkBlue: hsl(209, 33%, 12%);    
+}
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Franklin';
+    font-size: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+main{
+    max-width: 375px;
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--Gray);
+    margin: 1.5rem;
+}
+h1 > span{
+    font-weight: bold;
+    color: var(--VeryDarkBlue);
+}
+main > span{
+    font-size: 0.8rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+    row-gap: 1rem;
+}
+form > input{
+    border: 0.1rem solid var(--PaleBlue);
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+}
+form > input::placeholder{
+    color:var(--Gray);
+}
+form > span{
+    margin-left: 2rem;
+    text-align: left;
+    font-size: 0.7rem;
+    font-style: italic;
+    color: var(--LightRed);
+    display: none;
+}
+form.error > input{
+    border-color: var(--LightRed);
+}
+form.error > span{
+    display: initial;
+}
+form > button{
+    background-color: var(--Blue);
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 10rem;
+    box-shadow: 0 0.3rem 0.6rem 0.1rem var(--PaleBlue);
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out;
+}
+div.illustration-dashboard{
+    padding: 0rem 1.5rem;
+}
+div.illustration-dashboard > img{
+    max-width: 100%;
+}
+div.social{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: initial;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-bottom: 1rem;
+}
+li{
+    cursor: pointer;
+}
+li > img{
+    border: 0.1rem solid var(--PaleBlue);
+    border-radius: 100%;
+    padding: 0.3rem;
+    transition: all 0.25s ease-in-out;
+
+}
+li:hover > img{
+    background-color: var(--Blue);
+    border-color: var(--Blue);
+}
+li:hover > img.facebook{
+    content: url(./assets/facebook-logo-24-white.png);
+}
+li:hover > img.twitter{
+    content: url(./assets/twitter-logo-24-white.png);
+}
+li:hover > img.instagram{
+    content: url(./assets/instagram-logo-24-white.png);
+}
+div.social > span{
+    font-size: 0.7rem;
+    color: var(--Gray);
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width:1024px) {
+    main{
+        max-width: 768px;
+    }
+    h1{
+        font-size: 2rem;
+        margin: 1.5rem 1.5rem 0.5rem 1.5rem;
+    }
+    form{
+        display: grid;
+        grid-template-columns: 1fr 12rem;
+        column-gap: 1rem;
+        row-gap: 0.5rem;
+    }
+    form > button:hover{
+        background-color: hsl(223deg 87% 63% / 90%);
+    }
+    div.illustration-dashboard{
+        padding: 0rem 3rem;
+    }
+}
