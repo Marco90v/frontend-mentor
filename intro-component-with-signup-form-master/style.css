@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+:root{
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+}
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Red);
+    background-image: url(./images/bg-intro-mobile.png);
+    font-size: 16px;
+    font-family: 'Poppins';
+    color:white;
+    text-align: center;
+}
+section.title{
+    margin: 5.5rem 2rem 4rem 2rem;
+}
+h1{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+section.formData{
+    margin: 0 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+}
+section.formData > button{
+    padding: 1.2rem 4rem;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    background-color: var(--Blue);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 0.1rem 0.1rem hsl(249deg 10% 26% / 30%); 
+}
+section.formData > button > span{
+    font-weight: 400;
+}
+section.formData > form{
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 0.1rem 0.1rem hsl(249deg 10% 26% / 30%);
+}
+section.formData > form > div{
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    margin-bottom: 1rem;
+}
+section.formData > form > div > input {
+    border: 0.1rem solid hsl(246deg 25% 77% / 50%);
+    padding: 1rem;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    width: 100%;
+}
+section.formData > form > div > img{
+    position: absolute;
+    right: 1.5rem;
+    top: 19%;
+    display: none;
+}
+section.formData > form > div > span{
+    color: var(--Red);
+    font-style: italic;
+    text-align: right;
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+    display: none;
+}
+section.formData > form > div.error > img,
+section.formData > form > div.error > span{
+    display: initial;
+}
+section.formData > form > button{
+    width: 100%;
+    background-color: var(--Green);
+    color: white;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    padding: 1rem 0 0.8rem 0;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.2rem 0.1rem 0.1rem hsl(154deg 57.21% 45.58%);
+    cursor:pointer; 
+    transition: background-color 0.25s ease-in-out;
+}
+section.formData > form > button:hover{
+    background-color: hsl(154deg 59% 51% / 70%);
+}
+section.formData > form > p{
+    color: var(--GrayishBlue);
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin: 1rem 1.5rem 0rem 1.5rem;
+}
+section.formData > form > p > span{
+    color: var(--Red);
+}
+section.formData > form > div.error > input{
+    border-color: var(--Red);
+    border-width: 0.15rem;
+}
+footer{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 1024px) {
+    body{
+        background-image: url(./images/bg-intro-desktop.png);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1024px;  
+    }
+    section.title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    section.title > p{
+        font-size: 0.9rem;
+    }
+    section.formData{
+        margin: 2rem;
+    }
+    footer{
+        display: initial;
+    }
+}
