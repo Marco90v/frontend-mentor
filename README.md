@@ -4,6 +4,7 @@ The projects are located inside this folder as in other repositories of this sam
 
 ## Main
 
+- [Ping single column coming soon page](https://github.com/Marco90v/fontend-mentor/tree/master/ping-coming-soon-page-master)
 - [Intro component with sign-up form](https://github.com/Marco90v/fontend-mentor/tree/master/intro-component-with-signup-form-master)
 - [Results summary component](https://github.com/Marco90v/fontend-mentor/tree/master/results-summary-component-main)
 - [Social proof section](https://github.com/Marco90v/fontend-mentor/tree/master/social-proof-section-master)
