@@ -1,0 +1,20 @@
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --LightPink: hsl(321, 100%, 78%);
+    --LightRed: hsl(0, 100%, 63%);
+    --VeryDarkCyan: hsl(192, 100%, 9%);
+    --VeryPaleBlue: hsl(207, 100%, 98%);
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    box-sizing: border-box;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
