@@ -13,8 +13,187 @@
 *::before{
     margin: 0;
     padding: 0;
+    border: 0;
     border-spacing: 0;
     box-sizing: border-box;
 }
+body{
+    color: var(--VeryDarkCyan);
+}
+main{
+    /* padding: 2rem; */
+}
+h1,h2{
+    font-weight: 900;
+}
+section,
+header{
+    padding: 2rem;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+button{
+    /* width: 13rem; */
+    margin: auto;
+    padding: 1rem 2rem;
+    background-color: var(--Pink);
+    color: white;
+    border-radius: 5rem;
+    font-weight: bold;
+    box-shadow: 0 0.2rem 0.5rem 0.1rem rgb(128 128 128 / 50%);
+}
+button.secundary{
+    width: auto;
+    margin: 0;
+    padding: 0.5rem 1.5rem;
+    background-color: white;
+    border:solid 0.1rem var(--Pink);
+    color: var(--Pink);
+    font-weight: 100;
+    box-shadow: none;
+}
+button.tertiary{
+    box-shadow: none;
+    border-radius: 0.3rem;
+    margin: 0;
+    margin-left: auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+header>img{
+    width: 7rem;
+}
+section.theConmmunity{
+    gap: 3rem;
+    /* align-items: center; */
+}
+.contentCommunities>p,
+.contentMessage>p{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.contentCommunities>img,
+.contentMessage>img{
+    margin-right: 7rem;
+}
+.contentCommunities>p>span,
+.contentMessage>p>span{
+    font-size: 1rem;
+    font-weight: 100;
+}
+section.together,
+section.yoursUsers{
+    padding: 0;
+}
+section.together>img:nth-child(2),
+section.together>h2,
+section.together>p,
+section.yoursUsers>img:nth-child(2),
+section.yoursUsers>h2,
+section.yoursUsers>p{
+    padding: 0 2rem;
+    background-color: var(--VeryPaleBlue);
+}
+section.together>h2,
+section.yoursUsers>h2{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+section.together>p,
+section.yoursUsers>p{
+    padding-bottom: 1rem;
+}
+section.conversations{
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+section.conversations>img{
+    margin: 3rem 0;
+}
+section.started{
+    gap: 2rem;
+    padding: 5rem 2rem;
+    align-items: center;
+}
+section.started>buttom{
+    width: 15rem;
+}
+footer{
+    background-color: var(--VeryDarkCyan);
+}
+footer>img{
+    width: 100%;
+    background-color: white;
+}
+section.footer{
+    /* background-color: var(--VeryDarkCyan); */
+    align-items: flex-start;
+    gap: 2rem;
+    text-align: left;
+    color: white;
+}
+form{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+}
+form>input{
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+form>button{
+    width: 10rem;
+    margin-left: auto;
+}
+#footer2>img{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(125deg)
+    brightness(103%) contrast(103%);
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+ul.social{
+    flex-direction: row;
+    font-size: 2rem;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+i{
+    color: white;
+}
+
+/* footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+} */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 1024px) {
+
+}
