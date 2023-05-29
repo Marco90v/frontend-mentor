@@ -149,6 +149,9 @@ form{
     flex-direction: column;
     width: 100%;
 }
+form>label{
+    display: none;
+}
 form>input{
     font-size: 1.5rem;
     width: 100%;
