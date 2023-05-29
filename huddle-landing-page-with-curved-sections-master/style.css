@@ -23,6 +23,9 @@ body{
 main{
     /* padding: 2rem; */
 }
+picture{
+    margin-bottom: -0.4rem;
+}
 h1,h2{
     font-weight: 900;
 }
@@ -71,7 +74,7 @@ header{
 header>img{
     width: 7rem;
 }
-section.theConmmunity{
+section.theCommunity{
     gap: 3rem;
     /* align-items: center; */
 }
@@ -95,6 +98,10 @@ section.theConmmunity{
 section.together,
 section.yoursUsers{
     padding: 0;
+}
+section.together>picture>img,
+section.yoursUsers>picture>img{
+    width: 100%;
 }
 section.together>img:nth-child(2),
 section.together>h2,
@@ -132,7 +139,7 @@ section.started>buttom{
 footer{
     background-color: var(--VeryDarkCyan);
 }
-footer>img{
+footer>picture>img{
     width: 100%;
     background-color: white;
 }
@@ -195,5 +202,137 @@ i{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media (min-width: 1024px) {
+    section,
+    header{
+        padding: 2rem 4rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    section.theCommunity,
+    section.together,
+    section.yoursUsers{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    section.together,
+    section.yoursUsers{
+        grid-template-rows: auto 1fr 1fr auto;
+        text-align: left;
+    }
+    section.theCommunity>h1,
+    section.theCommunity>p,
+    section.theCommunity>button,
+    section.theCommunity>img,
+    section.together>picture,
+    section.yoursUsers>picture{
+        grid-column: 1/3;
+    }
+    section.theCommunity>h1{
+        font-size: 2.5rem;
+    }
+    section.theCommunity>p{
+        margin: auto;
+        width: 30rem;
+    }
+    button{
+        width: 19rem;
+    }
+    section.theCommunity>img{
+        max-width: 53rem;
+        margin: auto;
+    }
+    .contentCommunities{
+        padding-left: 7rem;
+    }
+    .contentMessage{
+        padding-right: 7rem;
+    }
+    section.together>img,
+    section.yoursUsers>img{
+        grid-column: 2/3;
+        grid-row: 2/4;
+        width: 100%;
+        height: 100%;
+    }
+    section.together>img:nth-child(2),
+    section.yoursUsers>img:nth-child(2){
+        padding-right: 6rem;
+    }
 
+    section.together>h2,
+    section.together>p,
+    section.yoursUsers>h2,
+    section.yoursUsers>p{
+        grid-column: 1/2;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    section.together>h2,
+    section.yoursUsers>h2{
+        grid-row: 2/3;
+        padding-top: 12rem;
+    }
+    section.together>p,
+    section.yoursUsers>p{
+        grid-row: 3/4;
+    }
+    section.conversations{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: left;
+        column-gap: 5rem;
+    }
+    section.conversations>img{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        width: 100%;
+        padding-left: 2rem;
+    }
+    section.conversations>h2{
+        margin-top: auto;
+    }
+    section.conversations>p{
+        padding-right: 6rem;
+    }
+    section.started{
+        padding: 10rem;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        column-gap: 10rem;
+        padding-bottom: 2rem;
+        /* padding: 0 2rem 2rem 2rem; */
+    }
+    footer>picture{
+        grid-column: 1/3;
+    }
+    section#footer{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-left: 2rem;
+    }
+    section#footer2{
+        padding-right: 2rem;
+    }
+    section#footer>form{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr;
+        column-gap: 3rem;
+    }
+    section#footer>p,
+    section#footer2>p{
+        margin-right: 10rem;
+    }
+    section#footer>form>buttom {
+        margin: 0
+    };
+    ul.social{
+        margin-top: 2rem;
+    }
+    
 }
