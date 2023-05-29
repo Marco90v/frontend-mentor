@@ -1,0 +1,346 @@
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --LightPink: hsl(321, 100%, 78%);
+    --LightRed: hsl(0, 100%, 63%);
+    --VeryDarkCyan: hsl(192, 100%, 9%);
+    --VeryPaleBlue: hsl(207, 100%, 98%);
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    box-sizing: border-box;
+}
+body{
+    color: var(--VeryDarkCyan);
+}
+picture{
+    margin-bottom: -0.4rem;
+}
+h1,h2{
+    font-weight: 900;
+}
+section,
+header{
+    padding: 2rem;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+button{
+    margin: auto;
+    padding: 1rem 2rem;
+    background-color: var(--Pink);
+    color: white;
+    border-radius: 5rem;
+    font-weight: bold;
+    box-shadow: 0 0.2rem 0.5rem 0.1rem rgb(128 128 128 / 50%);
+}
+button.secundary{
+    width: auto;
+    margin: 0;
+    padding: 0.5rem 1.5rem;
+    background-color: white;
+    border:solid 0.1rem var(--Pink);
+    color: var(--Pink);
+    font-weight: 100;
+    box-shadow: none;
+}
+button.tertiary{
+    box-shadow: none;
+    border-radius: 0.3rem;
+    margin: 0;
+    margin-left: auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+header>img{
+    width: 7rem;
+}
+section.theCommunity{
+    gap: 3rem;
+}
+.contentCommunities>p,
+.contentMessage>p{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.contentCommunities>img,
+.contentMessage>img{
+    margin-right: 7rem;
+}
+.contentCommunities>p>span,
+.contentMessage>p>span{
+    font-size: 1rem;
+    font-weight: 100;
+}
+section.together,
+section.yoursUsers{
+    padding: 0;
+}
+section.together>picture>img,
+section.yoursUsers>picture>img{
+    width: 100%;
+}
+section.together>img:nth-child(2),
+section.together>h2,
+section.together>p,
+section.yoursUsers>img:nth-child(2),
+section.yoursUsers>h2,
+section.yoursUsers>p{
+    padding: 0 2rem;
+    background-color: var(--VeryPaleBlue);
+}
+section.together>h2,
+section.yoursUsers>h2{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+section.together>p,
+section.yoursUsers>p{
+    padding-bottom: 1rem;
+}
+section.conversations{
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+section.conversations>img{
+    margin: 3rem 0;
+}
+section.started{
+    gap: 2rem;
+    padding: 5rem 2rem;
+    align-items: center;
+}
+section.started>buttom{
+    width: 15rem;
+}
+footer{
+    background-color: var(--VeryDarkCyan);
+}
+footer>picture>img{
+    width: 100%;
+    background-color: white;
+}
+section.footer{
+    align-items: flex-start;
+    gap: 2rem;
+    text-align: left;
+    color: white;
+}
+form{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+}
+form>input{
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    outline: none;
+}
+form>input.error{
+    border: solid 0.1rem var(--LightRed);
+}
+section#footer>form>span{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    color: var(--LightRed);
+    opacity: 0;
+}
+section#footer>form>span.errorShow{
+    opacity: 1;
+}
+form>button{
+    width: 10rem;
+    margin-left: auto;
+}
+#footer2>img{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(125deg)
+    brightness(103%) contrast(103%);
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+ul.social{
+    flex-direction: row;
+    font-size: 2rem;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+i{
+    color: white;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 1024px) {
+    section,
+    header{
+        padding: 2rem 4rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    section.theCommunity,
+    section.together,
+    section.yoursUsers{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    section.together,
+    section.yoursUsers{
+        grid-template-rows: auto 1fr 1fr auto;
+        text-align: left;
+    }
+    section.theCommunity>h1,
+    section.theCommunity>p,
+    section.theCommunity>button,
+    section.theCommunity>img,
+    section.together>picture,
+    section.yoursUsers>picture{
+        grid-column: 1/3;
+    }
+    section.theCommunity>h1{
+        font-size: 2.5rem;
+    }
+    section.theCommunity>p{
+        margin: auto;
+        width: 30rem;
+    }
+    button{
+        width: 19rem;
+        cursor:pointer;
+        transition: all ease-in-out 0.25s;
+    }
+    section.theCommunity>img{
+        max-width: 53rem;
+        margin: auto;
+    }
+    .contentCommunities{
+        padding-left: 7rem;
+    }
+    .contentMessage{
+        padding-right: 7rem;
+    }
+    section.together>img,
+    section.yoursUsers>img{
+        grid-column: 2/3;
+        grid-row: 2/4;
+        width: 100%;
+        height: 100%;
+    }
+    section.together>img:nth-child(2),
+    section.yoursUsers>img:nth-child(2){
+        padding-right: 6rem;
+    }
+
+    section.together>h2,
+    section.together>p,
+    section.yoursUsers>h2,
+    section.yoursUsers>p{
+        grid-column: 1/2;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    section.together>h2,
+    section.yoursUsers>h2{
+        grid-row: 2/3;
+        padding-top: 12rem;
+    }
+    section.together>p,
+    section.yoursUsers>p{
+        grid-row: 3/4;
+    }
+    section.conversations{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: left;
+        column-gap: 5rem;
+    }
+    section.conversations>img{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        width: 100%;
+        padding-left: 2rem;
+    }
+    section.conversations>h2{
+        margin-top: auto;
+    }
+    section.conversations>p{
+        padding-right: 6rem;
+    }
+    section.started{
+        padding: 10rem;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        column-gap: 10rem;
+        padding-bottom: 2rem;
+    }
+    footer>picture{
+        grid-column: 1/3;
+    }
+    section#footer{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-left: 2rem;
+    }
+    section#footer2{
+        padding-right: 2rem;
+    }
+    section#footer>form{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 3rem;
+    }
+    section#footer>p,
+    section#footer2>p{
+        margin-right: 10rem;
+    }
+    section#footer>form>buttom {
+        margin: 0
+    };
+    ul.social{
+        margin-top: 2rem;
+    }
+    button:hover{
+        background-color: var(--LightPink);
+    }
+    button.secundary:hover{
+        background-color: white;
+        border-color: var(--LightPink);
+        color: var(--LightPink);
+    }
+    
+}

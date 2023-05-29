@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <img src="./images/logo.svg" alt="logoHuddle" />
+      <button class="secundary">
+        Try it free
+      </button>
+    </header>
+
+    <section id="theCommunity" class="theCommunity">
+      <h1>Build The Community Your Fans Will Love</h1>
+      <p>
+        Huddle re-imagines the way we build communities. You have a voice, but so does 
+        your audience. Create connections with your users as you engage in genuine discussion. 
+      </p>
+      <button>
+        Get Started For Free
+      </button>
+  
+      <img src="./images/screen-mockups.svg" alt="screenMockups" />
+
+      <div class="contentCommunities">
+        <img src="./images/icon-communities.svg" alt="communities" />
+        <p>1.4k+<span>Communities Formed</span></p>
+      </div>
+  
+      <div class="contentMessage">
+        <img src="./images/icon-messages.svg" alt="messages" />
+        <p>2.7m+<span>Messages Sent</span></p>
+      </div>
+    </section>
+  
+    <section id="together" class="together">
+      <picture>
+        <source media="(max-width:1023px)" srcset="./images/bg-section-top-mobile-1.svg">
+        <source media="(min-width:1024px)" srcset="./images/bg-section-top-desktop-1.svg">
+        <img src="./images/bg-section-top-mobile-1.svg" alt="top" />
+      </picture>
+
+      <img src="./images/illustration-grow-together.svg" alt="together" />
+      <h2>Grow Together</h2>
+      <p>
+        Generate meaningful discussions with your audience and build a strong, loyal community. 
+        Think of the insightful conversations you miss out on with a feedback form. 
+      </p>
+      <picture>
+        <source media="(max-width:1023px)" srcset="./images/bg-section-bottom-mobile-1.svg">
+        <source media="(min-width:1024px)" srcset="./images/bg-section-bottom-desktop-1.svg">
+        <img src="./images/bg-section-bottom-mobile-1.svg" alt="bottom" />
+      </picture>
+    </section>
+
+    <section id="conversations" class="conversations">
+      <img src="./images/illustration-flowing-conversation.svg" alt="conversation" />
+      <h2>Flowing Conversations</h2>
+      <p>
+        You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+        just-in-time loading for a more natural flow.
+      </p>
+    </section>
+
+    <section id="yoursUsers" class="yoursUsers">
+      <picture>
+        <source media="(max-width:1023px)" srcset="./images/bg-section-top-mobile-2.svg">
+        <source media="(min-width:1024px)" srcset="./images/bg-section-top-desktop-2.svg">
+        <img src="./images/bg-section-top-mobile-2.svg" alt="top" />
+      </picture>
+      <img src="./images/illustration-your-users.svg" alt="your-user" />
+      <h2>Your Users</h2>  
+      <p>
+        It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+        once signed in to your app, your users can start chatting immediately.
+      </p>
+      <picture>
+        <source media="(max-width:1023px)" srcset="./images/bg-section-bottom-mobile-2.svg">
+        <source media="(min-width:1024px)" srcset="./images/bg-section-bottom-desktop-2.svg">
+        <img src="./images/bg-section-bottom-mobile-2.svg" alt="bottom" />
+      </picture>
+    </section>
+
+    <section id="started" class="started">
+      <h2>Ready To Build Your Community?</h2>
+      <button>Get Started For Free</button>
+    </section>
+
+  </main>
+  
+  <footer>
+    <picture>
+      <source media="(max-width:1023px)" srcset="./images/bg-footer-top-mobile.svg">
+      <source media="(min-width:1024px)" srcset="./images/bg-footer-top-desktop.svg">
+      <img src="./images/bg-footer-top-mobile.svg" alt="top" />
+    </picture>
+    <section id="footer", class="footer">
+      <h2>Newsletter</h2>
+      <p>
+        To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+        send you spam or pass on your email address
+      </p>
+      <form>
+        <input type="email" name="email" id="email">
+        <span id="error">Ckeck your email please</span>
+        <button type="submit" class="tertiary">
+          Subscribe
+        </button>
+      </form>
+    </section>
+    <section id="footer2", class="footer">
+      <img src="./images/logo.svg" alt="logo" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+        vestibulum a, ultrices quis sem.
+      </p>
+      
+      <ul>
+        <li>
+          <img src="./images/icon-phone.svg" alt="phone" />
+          Phone: +1-543-123-4567
+        </li>
+        <li>
+          <img src="./images/icon-email.svg" alt="email" />
+          example@huddle.com
+        </li>
+      </ul>
+      
+      <ul class="social">
+        <li>
+          <a href="https://es-la.facebook.com/" target="_blank" aria-label="facebook"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" target="_blank" aria-label="twitter"><i class="fab fa-twitter-square"></i></a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+  <script>
+    const form = document.querySelector("form");
+    const mail = document.querySelector("#email");
+    const errorText = document.querySelector("#error");
+
+    function validateEmail(email){
+      const validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+      return validEmail.test(email);
+    }
+
+    function submit(e){
+      e.preventDefault();
+      const emailValue = mail.value;
+      if(validateEmail(emailValue)){
+          errorText.classList.remove("errorShow");
+          email.classList.remove("error");
+      }
+      else{
+          errorText.classList.add("errorShow");
+          email.classList.add("error");
+      }
+    }
+      
+    form.addEventListener("submit",submit);
+  </script>
+</body>
+</html>
