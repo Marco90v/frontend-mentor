@@ -18,7 +18,7 @@ La aplicación hace uso de javascript para almacenar el voto y hacer cambio de l
  * Grid
  * Mobile-First
 ## Demo
-https://marco90v.github.io/fontend-mentor/interactive-rating-component-main/
+https://marco90v.github.io/frontend-mentor/interactive-rating-component-main/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio

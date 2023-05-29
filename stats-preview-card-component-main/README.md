@@ -15,7 +15,7 @@ Puede hacer uso de cualquiera de las tecnologías existentes para lograr el resu
  * Grid
  * Mobile-First
 ## Demo
-https://marco90v.github.io/fontend-mentor/stats-preview-card-component-main/
+https://marco90v.github.io/frontend-mentor/stats-preview-card-component-main/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio

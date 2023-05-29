@@ -15,7 +15,7 @@ Puede hacer uso de cualquiera de las tecnologías existentes para lograr el resu
  * Grid
  * Mobile-First
 ## Demo
-https://marco90v.github.io/fontend-mentor/order-summary-component-main/
+https://marco90v.github.io/frontend-mentor/order-summary-component-main/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio

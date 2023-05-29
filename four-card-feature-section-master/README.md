@@ -1,4 +1,4 @@
-# Frontend Mentor - Base Apparel coming soon page
+# Frontend Mentor - Four card feature section
 
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
@@ -16,7 +16,7 @@ Puede hacer uso de cualquiera de las tecnologías existentes para lograr el resu
  * Flex
  * Mobile-First
 ## Demo
-https://marco90v.github.io/fontend-mentor/four-card-feature-section-master/
+https://marco90v.github.io/frontend-mentor/four-card-feature-section-master/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio

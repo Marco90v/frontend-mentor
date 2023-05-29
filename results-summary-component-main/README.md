@@ -18,7 +18,7 @@ Puede hacer uso de cualquiera de las tecnologías existentes para lograr el resu
  * JavaScript
  * JSON
 ## Demo
-https://marco90v.github.io/fontend-mentor/results-summary-component-main/
+https://marco90v.github.io/frontend-mentor/results-summary-component-main/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio

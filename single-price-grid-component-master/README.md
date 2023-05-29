@@ -1,4 +1,4 @@
-# Frontend Mentor - Huddle landing page with a single introductory section
+# Frontend Mentor - Single price grid component
 
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
@@ -16,7 +16,7 @@ Puede hacer uso de cualquiera de las tecnologías existentes para lograr el resu
  * Flex
  * Mobile-First
 ## Demo
-https://marco90v.github.io/fontend-mentor/single-price-grid-component-master/
+https://marco90v.github.io/frontend-mentor/single-price-grid-component-master/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio

@@ -17,7 +17,7 @@ Puede hacer uso de cualquiera de las tecnologías existentes para lograr el resu
  * Mobile-First
  * JavaScript
 ## Demo
-https://marco90v.github.io/fontend-mentor/huddle-landing-page-with-curved-sections-master/
+https://marco90v.github.io/frontend-mentor/huddle-landing-page-with-curved-sections-master/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio

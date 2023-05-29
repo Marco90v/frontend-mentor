@@ -16,7 +16,7 @@ Puede hacer uso de cualquiera de las tecnologías existentes para lograr el resu
  * Flex
  * Mobile-First
 ## Demo
-https://marco90v.github.io/fontend-mentor/social-proof-section-master/
+https://marco90v.github.io/frontend-mentor/social-proof-section-master/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio

@@ -1,4 +1,4 @@
-# Frontend Mentor - Ping single column coming soon page
+# Frontend Mentor - Product preview card component
 
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
@@ -17,7 +17,7 @@ Puede hacer uso de cualquiera de las tecnologías existentes para lograr el resu
  * Mobile-First
  * JavaScript
 ## Demo
-https://marco90v.github.io/fontend-mentor/ping-coming-soon-page-master/
+https://marco90v.github.io/frontend-mentor/ping-coming-soon-page-master/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio
