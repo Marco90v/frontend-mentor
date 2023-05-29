@@ -17,7 +17,7 @@ Puede hacer uso de cualquiera de las tecnologías existentes para lograr el resu
  * Flex
  * Mobile-First
 ## Demo
-https://marco90v.github.io/fontend-mentor/base-apparel-coming-soon-master/
+https://marco90v.github.io/frontend-mentor/base-apparel-coming-soon-master/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio
