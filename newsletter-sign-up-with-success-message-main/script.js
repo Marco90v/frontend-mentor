@@ -8,6 +8,12 @@ paramEmail ? submitted() : confForm();
 function submitted(){
     const spanEmail = document.getElementById("email");
     spanEmail.innerText = `${paramEmail}.`;
+    const buttonReturn = document.getElementById("return");
+    buttonReturn.addEventListener("click", back);
+}
+
+function back(){
+    history.back();
 }
 
 function confForm(){
