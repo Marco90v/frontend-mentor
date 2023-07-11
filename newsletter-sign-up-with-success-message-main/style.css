@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    box-sizing: border-box;
+}
+body{
+    color: var(--DarkSlateGrey);
+    background-color: var(--CharcoalGrey);
+}
+main{
+    max-width: 375px;
+    width: 375px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-color: var(--White);
+    height: 100%;
+    min-height: 100vh;
+}
+div#submited > div{
+    margin: 10rem 2rem 3rem 2rem;
+}
+div#submited > section > button {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1.2rem;
+    width: calc(375px - 4rem);
+    margin: auto;
+    border-radius: 0.5rem;
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    font-weight: bold;
+    font-size: 1rem;
+}
+section{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+section > p{
+    line-height: 1.5rem;
+}
+h1{
+    font-size: 2.5rem;
+}
+ul{
+    list-style: none;
+}
+li {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+li::before{
+    content: url(./assets/images/icon-list.svg);
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+form > label{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+form#formSend > input[type="text"]{
+    padding: 1.1rem 1.5rem;
+    border: 0.1rem solid var(--Grey);
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    grid-column: 1/3;
+}
+form#formSend > input[type="text"].error{
+    color: var(--Tomato);
+    border-color: var(--Tomato);
+    background-color: hsl(4deg 100% 67% / 50%);
+}
+form#formSend > input[type="text"]:active,
+form#formSend > input[type="text"]:focus{
+    outline: 0.1rem solid var(--DarkSlateGrey);
+}
+form#formSend > input[type="text"].error:active,
+form#formSend > input[type="text"].error:focus{
+    outline: 0.1rem solid var(--Tomato);
+}
+form > span{
+    color: var(--Tomato);
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-align: right;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+}
+form > button{
+    background-color: var(--DarkSlateGrey);
+    color: white;
+    font-weight: bold;
+    padding: 1.1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    grid-column: 1/3;
+}
+footer{
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.error{
+    opacity: 1;
+}
+.email{
+    font-weight: bold;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

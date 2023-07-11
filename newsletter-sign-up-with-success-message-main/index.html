@@ -3,50 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Sign-up form start -->
-
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+	<main>
+		<div id="front">
+			<div>
+				<picture>
+					<img src="./assets/images/illustration-sign-up-mobile.svg" alt="header" >
+				</picture>
+			</div>
+			<section>
+				<h1>Stay updated!</h1>
+				<p>Join 60,000+ product managers receiving monthly updates on:</p>
+				<ul>
+					<li>Product discovery and building what matters</li>
+					<li>Measuring to ensure updates are a success</li>
+					<li>And much more!</li>
+				</ul>
+				<form id="formSend">
+					<label for="email">Email address</label>
+					<span id="error">Valid email required</span>
+					<input type="text" name="email" id="email" placeholder="email@company.com">
+					<button type="submit">Subscribe to monthly newsletter</button>
+				</form>
+			</section>
+		</div>
+	</main>  
+  <footer>
+	  <div class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv" target="_blank">Frontend Mentor</a>. 
+		Coded by <a href="https://marcovelasquezfigarella.netlify.app/">Marco Velasquez Figarella</a>.
+	  </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
