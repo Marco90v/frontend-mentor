@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<div>
+			<picture>
+				<source media="(max-width: 1024px )" srcset="./assets/images/illustration-sign-up-mobile.svg">
+				<source media="(min-width: 1024px )" srcset="./assets/images/illustration-sign-up-desktop.svg">
+				<img src="./assets/images/illustration-sign-up-mobile.svg" alt="header" >
+			</picture>
+		</div>
+		<section>
+			<h1>Stay updated!</h1>
+			<p>Join 60,000+ product managers receiving monthly updates on:</p>
+			<ul>
+				<li>Product discovery and building what matters</li>
+				<li>Measuring to ensure updates are a success</li>
+				<li>And much more!</li>
+			</ul>
+			<form id="formSend">
+				<label for="email">Email address</label>
+				<span id="error">Valid email required</span>
+				<input type="text" name="email" id="email" placeholder="email@company.com">
+				<button type="submit">Subscribe to monthly newsletter</button>
+			</form>
+		</section>
+	</main>  
+  <footer>
+	  <div class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv" target="_blank">Frontend Mentor</a>. 
+		Coded by <a href="https://marcovelasquezfigarella.netlify.app/">Marco Velasquez Figarella</a>.
+	  </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
