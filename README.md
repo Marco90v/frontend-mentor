@@ -4,6 +4,7 @@ The projects are located inside this folder as in other repositories of this sam
 
 ## Main
 
+- [FAQ accordion ("NEW")](https://github.com/Marco90v/frontend-mentor/tree/master/faq-accordion-main)
 - [Newsletter sign-up form with success message](https://github.com/Marco90v/frontend-mentor/tree/master/newsletter-sign-up-with-success-message-main)
 - [Huddle landing page with curved sections](https://github.com/Marco90v/frontend-mentor/tree/master/huddle-landing-page-with-curved-sections-master)
 - [Ping single column coming soon page](https://github.com/Marco90v/frontend-mentor/tree/master/ping-coming-soon-page-master)
