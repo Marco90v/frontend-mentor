@@ -15,10 +15,9 @@ Puede hacer uso de cualquiera de las tecnologías existentes para lograr el resu
  * Grid
  * Flex
  * Mobile-First
- * JavaScript
 
 ## Demo
-https://marco90v.github.io/frontend-mentor/faq-accordion-main/
+https://marco90v.github.io/frontend-mentor/social-links-profile-main/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio
