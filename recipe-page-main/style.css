@@ -147,3 +147,28 @@ p{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (width > 375px) {
+    body{
+        background-color: var(--Eggshell);
+    }
+    main{
+        width: 700px;
+        padding: 2rem;
+        margin: 4rem auto;
+        background-color: var(--White);
+        border-radius: 1rem;
+    }
+    header > picture > img{
+        border-radius: .7rem
+    }
+    section{
+        margin: 0;
+    }
+    hr{
+        margin: 2rem 0;
+    }
+    .nutrition{
+        margin-bottom: 0;
+    }
+}
