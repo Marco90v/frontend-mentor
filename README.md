@@ -4,7 +4,8 @@ The projects are located inside this folder as in other repositories of this sam
 
 ## Main
 
-- [Social links profile ("NEW")](https://github.com/Marco90v/frontend-mentor/tree/master/social-links-profile-main)
+- [Recipe page ("NEW")](https://github.com/Marco90v/frontend-mentor/tree/master/recipe-page-main)
+- [Social links profile](https://github.com/Marco90v/frontend-mentor/tree/master/social-links-profile-main)
 - [FAQ accordion](https://github.com/Marco90v/frontend-mentor/tree/master/faq-accordion-main)
 - [Newsletter sign-up form with success message](https://github.com/Marco90v/frontend-mentor/tree/master/newsletter-sign-up-with-success-message-main)
 - [Huddle landing page with curved sections](https://github.com/Marco90v/frontend-mentor/tree/master/huddle-landing-page-with-curved-sections-master)

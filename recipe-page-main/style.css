@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root{
+    /* ### Primary */
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+
+    /* ### Neutral */
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    font-family: "Outfit", sans-serif;
+    background-color: var(--White);
+    color: var(--WengeBrown);
+}
+header > picture > img{
+    width: 100%;
+}
+h1{
+    font-family: "Young Serif", serif;
+    color: var(--DarkCharcoal);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+h2{
+    font-family: "Young Serif", serif;
+    color: var(--Nutmeg);
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+h3{
+    color: var(--DarkRaspberry);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+section{
+    margin: 0 2rem;
+}
+hr{
+    border-top: .1rem solid var(--LightGrey);
+    margin: 2rem;
+}
+.recipe, .preparation, .ingredients{
+ margin: 2rem 0;
+}
+
+.preparation{
+    margin-top: 1.5rem;
+    background-color: var(--RoseWhite);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+ul{
+    padding-left: 1.5rem;
+}
+.preparation > ul{
+    color: var(--DarkRaspberry);
+}
+.preparation > ul > li:not(:last-of-type){
+    margin-bottom: .5rem;
+}
+.preparation > ul > li > span{
+    display: block;
+    margin-left: 0.7rem;
+    color: var(--WengeBrown);
+}
+p{
+    line-height: 1.5rem;
+}
+.ingredients{
+    margin-top: 2rem;
+}
+.ingredients > ul{
+    color: var(--Nutmeg);
+}
+.ingredients > ul > li{
+    margin: 0.5rem 0;
+}
+.ingredients > ul > li > span, .instructions > ul > li > span{
+    display: block;
+    color: var(--WengeBrown);
+    margin-left: 1rem;
+}
+.instructions > ul{
+    list-style: decimal;
+    font-weight: 600;
+    color: var(--Nutmeg);
+    margin-bottom: 2rem;
+}
+.instructions > ul > li{
+    margin: .5rem;
+}
+.instructions > ul > li > span{
+    font-weight: 400;
+}
+.nutrition{
+    margin-bottom: 1rem;
+}
+.nutrition > table{
+    margin: auto;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: left;
+}
+.nutrition > table > tbody{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.nutrition > table > tbody > tr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.nutrition > table > tbody > tr:not(:last-of-type){
+    border-bottom: 1px solid var(--LightGrey);
+}
+.nutrition > table > tbody > tr > th{
+    margin-left: 2rem;
+    font-weight: 400;
+}
+.nutrition > table > tbody > tr > td{
+    margin-left: 1rem;
+    color: var(--Nutmeg);
+    font-weight: 600;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (width > 375px) {
+    body{
+        background-color: var(--Eggshell);
+    }
+    main{
+        width: 700px;
+        padding: 2rem;
+        margin: 4rem auto;
+        background-color: var(--White);
+        border-radius: 1rem;
+    }
+    header > picture > img{
+        border-radius: .7rem
+    }
+    section{
+        margin: 0;
+    }
+    hr{
+        margin: 2rem 0;
+    }
+    .nutrition{
+        margin-bottom: 0;
+    }
+}
