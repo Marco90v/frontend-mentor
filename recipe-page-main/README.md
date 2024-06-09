@@ -1,4 +1,4 @@
-# Frontend Mentor - FAQ accordion
+# Frontend Mentor - Recipe page
 
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
