@@ -45,12 +45,6 @@ h2{
     font-weight: 400;
     margin-bottom: 1rem;
 }
-h3{
-    color: var(--DarkRaspberry);
-    font-weight: 600;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-}
 section{
     margin: 0 2rem;
 }
@@ -61,12 +55,17 @@ hr{
 .recipe, .preparation, .ingredients{
  margin: 2rem 0;
 }
-
 .preparation{
     margin-top: 1.5rem;
     background-color: var(--RoseWhite);
     padding: 1.5rem;
     border-radius: .5rem;
+}
+.preparation > h2{
+    color: var(--DarkRaspberry);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 ul{
     padding-left: 1.5rem;
