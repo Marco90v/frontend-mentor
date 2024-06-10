@@ -60,7 +60,7 @@ label{
 input[type="text"],
 textarea{
     border: 1px solid var(--Grey500);
-    padding: .8rem;
+    padding: 1rem;
     border-radius: 0.25rem;
     color: var(--Grey900);
     cursor: pointer;
@@ -86,6 +86,9 @@ div:has(input[type="radio"]){
     width: 1.3rem;
     background: no-repeat;
 }
+.radioCheck{
+    margin-top: 0.2rem;
+}
 div:has(input[type="radio"]:checked) > span{
     background-image: url(./assets/images/icon-radio-selected.svg);
 }
@@ -94,14 +97,12 @@ input[type="checkbox"]{
     width: 1.2rem;
     cursor: pointer;
 }
-input[type="checkbox"]:checked{
+input[type="checkbox"]:checked,
+input[type="radio"]:checked{
     opacity: 0;
 }
 input[type="checkbox"]:checked ~ .checked {
     background-image: url(./assets/images/icon-checkbox-check.svg);
-}
-input[type="radio"]:checked{
-    opacity: 0;
 }
 input[type="radio"],
 label{
@@ -119,7 +120,10 @@ fieldset#group1 > div{
     column-gap: 1rem;
     padding: 0.7rem 1rem;
     border-radius: 0.25rem;
-    /* cursor: pointer; */
+    align-items: center;
+}
+.contentRadio{
+    padding-top: .2rem;
 }
 fieldset#group1 > div:has(input[type="radio"]:checked){
     background-color: var(--Green200);
