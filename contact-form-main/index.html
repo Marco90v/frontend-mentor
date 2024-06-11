@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Contact Us</h1>
+    <form action="">
+      <div class="input">
+        <label for="first_name">First Name <span>*</span></label>
+        <input type="text" name="first_name" id="first_name">
+        <span class="error">This field is required</span>
+      </div>
+      <div class="input">
+        <label for="last_name">Last Name <span>*</span></label>
+        <input type="text" name="last_name" id="last_name">
+        <span class="error">This field is required</span>
+      </div>
+      <div class="input">
+        <label for="email">Email Address <span>*</span></label>
+        <input type="text" name="email" id="email">
+        <span class="error">Please enter a valid email address</span>
+        <!-- <span>This field is required</span> -->
+      </div>
+      <div class="input">
+        <label for="general">Query Type <span>*</span></label>
+        <fieldset id="group1">
+          <div>
+            <div class="contentRadio">
+              <input type="radio" name="group1" id="general" value="general">
+              <span class="radioCheck"></span>
+            </div>
+            <label for="general">General Enquiry</label>
+          </div>
+          <div>
+            <div class="contentRadio">
+              <input type="radio" name="group1" id="support" value="support">
+              <span class="radioCheck"></span>
+            </div>
+            <label for="support">Support Request</label>
+          </div>  
+        </fieldset>
+        <span class="error">Please select a query type</span>
+      </div>
+      <div class="input">
+        <label for="message">Message <span>*</span></label>
+        <textarea name="message" id="message" rows="10"></textarea>
+        <span class="error">This field is required</span>
+      </div>
+      <div class="input">
+        <div class="check">
+          <div>
+            <input type="checkbox" name="accept" id="accept" value="true">
+            <span class="checked"></span>
+          </div>
+          <label for="accept">I consent to being contacted by the team <span>*</span></label>
+        </div>
+        <span class="error">To submit this form, please consent to being contacted</span>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="alert">
+      <h2><img src="./assets/images/icon-success-check.svg" alt="" srcset="">Message Sent!</h2>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://marcovelasquezfigarella.netlify.app/" target="_blank">Marco Velasquez Figarella</a>.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

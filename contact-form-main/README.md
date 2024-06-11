@@ -1,4 +1,4 @@
-# Frontend Mentor - Social links profile
+# Frontend Mentor - Contact form
 
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
@@ -15,9 +15,10 @@ Puede hacer uso de cualquiera de las tecnologías existentes para lograr el resu
  * Grid
  * Flex
  * Mobile-First
+ * JavaScript
 
 ## Demo
-https://marco90v.github.io/frontend-mentor/social-links-profile-main/
+https://marco90v.github.io/frontend-mentor/contact-form-main/
 ## Autor
 Marco Velasquez Figarella
 ## Portafolio
