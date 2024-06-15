@@ -70,6 +70,13 @@ input{
     font-size: 1.3rem;
     color: var(--OffBlack);
     font-weight: 800;
+    outline: none;
+}
+input:focus{
+    border-color: var(--Purple);
+}
+input.error{
+    border-color: var(--LightRed);
 }
 div.contentButton{
     flex-direction: column;
@@ -95,10 +102,28 @@ button > img{
 div.years > p{
     font-size: 3.4rem;
     font-weight: 800;
+    line-height: 4rem;
 }
 div.years > p > span{
     font-size: 3rem;
+    font-weight: 800;
     color: var(--Purple);
+}
+span.error{
+    color: var(--LightRed);
+    font-size: 0.5rem;
+    letter-spacing: 0rem;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: capitalize;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+}
+span.error.show{
+    opacity: 1;
+}
+span.danger{
+    color: var(--LightRed);
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

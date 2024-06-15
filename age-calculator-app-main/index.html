@@ -21,15 +21,18 @@
     <div class="date">
       <div>
         <span>Day</span>
-        <input type="number" name="day" id="day" placeholder="DD">
+        <input type="number" name="day" id="day" placeholder="DD" min="0"  max="31">
+        <span class="error">This field required</span>
       </div>
       <div>
         <span>Month</span>
-        <input type="number" name="month" id="month" placeholder="MM">
+        <input type="number" name="month" id="month" placeholder="MM" min="0" max="12">
+        <span class="error">This field required</span>
       </div>
       <div>
         <span>Year</span>
-        <input type="number" name="year" id="year" placeholder="YYYY">
+        <input type="number" name="year" id="year" placeholder="YYYY" min="0">
+        <span class="error">This field required</span>
       </div>
     </div>
     <div class="contentButton">
@@ -39,9 +42,9 @@
       </button>
     </div>
     <div class="years">
-      <p><span>--</span> years</p>
-      <p><span>--</span> months</p>
-      <p><span>--</span> days</p>
+      <p><span id="y">--</span> years</p>
+      <p><span id="m">--</span> months</p>
+      <p><span id="d">--</span> days</p>
     </div>
   </main>
   <footer>
@@ -50,5 +53,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </div>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
