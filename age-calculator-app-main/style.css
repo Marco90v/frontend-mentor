@@ -127,3 +127,36 @@ span.danger{
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (width >= 376px) {
+    main{
+        margin: auto;
+        width: 50rem;
+        padding: 3rem;
+    }
+    div.date{
+        margin-right: 20rem;
+        margin-bottom: 0rem;
+    }
+    input{
+        width: 10rem;
+        font-size: 2rem;
+    }
+    div.contentButton{
+        align-items: flex-end;
+    }
+    div.years > p {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    div.years > p > span {
+        font-size: 6rem;
+    }
+    span{
+        font-size: 1rem;
+    }
+    span.error{
+        font-size: 1rem;
+        margin-top: .5rem;
+    }
+}
