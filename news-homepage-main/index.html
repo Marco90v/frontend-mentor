@@ -3,58 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | News homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main>
+    <header>
+      <picture>
+        <img src="./assets/images/logo.svg" alt="logo">
+      </picture>
+      <button id="open">
+        <img src="./assets/images/icon-menu.svg" alt="open">
+      </button>
+      <nav>
+        <button id="close">
+          <img src="./assets/images/icon-menu-close.svg" alt="close">
+        </button>
+        <ul>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </nav>    
+    </header>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+    <section id="uno">
+      <picture>
+        <img src="./assets/images/image-web-3-mobile.jpg" alt="portada">
+      </picture>
+      <h1>The Bright Future of Web 3.0?</h1>
+      <p>
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+        But is it really fulfilling its promise?
+      </p>
+      <button class="readMore">Read more</button>
+    </section>
 
-  The Bright Future of Web 3.0?
+    <section id="dos">
+      <h2>New</h2>
+      <ul>
+        <li>
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </li>
+        <li>
+          <h3>The Downsides of AI Artistry</h3>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </li>
+        <li>
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </li>
+      </ul>
+    </section>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+    <section id="tres">
+      <ul>
+        <li>
+          <picture>
+            <img src="./assets/images/image-retro-pcs.jpg" alt="retro">
+          </picture>
+          <article>
+            <h3>01</h3>
+            <h2>Reviving Retro PCs</h2>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </article>
+        </li>
+        <li>
+          <picture>
+            <img src="./assets/images/image-top-laptops.jpg" alt="laptops">
+          </picture>
+          <article>
+            <h3>02</h3>
+            <h2>Top 10 Laptops of 2022</h2>
+            <p>Our best picks for various needs and budgets.</p>
+          </article>
+        </li>
+        <li>
+          <picture>
+            <img src="./assets/images/image-gaming-growth.jpg" alt="gaming">
+          </picture>
+          <article>
+            <h3>03</h3>
+            <h2>The Growth of Gaming</h2>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+    
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
 </body>
 </html>
