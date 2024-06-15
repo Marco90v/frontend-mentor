@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @font-face {
+    font-family: "Poppins", sans-serif;
+    src: url("./assets/fonts/Poppins-Regular.ttf");
+} */
+:root{
+    /* ### Primary */
+    --Purple: hsl(259, 100%, 65%);
+    --LightRed: hsl(0, 100%, 67%);
+    
+    /* ### Neutral */
+    --White: hsl(0, 0%, 100%);
+    --OffWhite: hsl(0, 0%, 94%);
+    --LightGrey: hsl(0, 0%, 86%);
+    --SmokeyGrey: hsl(0, 1%, 44%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    background-color: var(--OffWhite);
+}
+main{
+    border-radius: 1.5rem 1.5rem 5rem 1.5rem;
+    background-color: var(--White);
+    margin: 6rem 1rem auto 1rem;
+    padding: 1.5rem;
+}
+h1{
+    display: none;
+}
+hr{
+    border-bottom: 0.15rem solid var(--OffWhite);
+    position: absolute;
+    width: 100%;
+}
+span{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--SmokeyGrey);
+    letter-spacing: 0.2rem;
+}
+div.date{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 2rem;
+    column-gap: 1rem;
+}
+div.date > div{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border:0.1rem solid var(--LightGrey);
+    width: 5.5rem;
+    font-size: 1.3rem;
+    color: var(--OffBlack);
+    font-weight: 800;
+    outline: none;
+}
+input:focus{
+    border-color: var(--Purple);
+}
+input.error{
+    border-color: var(--LightRed);
+}
+div.contentButton{
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+div.years{
+    margin-bottom: 1rem;
+}
+button{
+    padding: 1.2rem;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: var(--Purple);
+    cursor: pointer;
+}
+button > img{
+    width: 1.5rem;
+}
+div.years > p{
+    font-size: 3.4rem;
+    font-weight: 800;
+    line-height: 4rem;
+}
+div.years > p > span{
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--Purple);
+}
+span.error{
+    color: var(--LightRed);
+    font-size: 0.5rem;
+    letter-spacing: 0rem;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: capitalize;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+}
+span.error.show{
+    opacity: 1;
+}
+span.danger{
+    color: var(--LightRed);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (width >= 376px) {
+    main{
+        margin: auto;
+        width: 50rem;
+        padding: 3rem;
+    }
+    div.date{
+        margin-right: 20rem;
+        margin-bottom: 0rem;
+    }
+    input{
+        width: 10rem;
+        font-size: 2rem;
+    }
+    div.contentButton{
+        align-items: flex-end;
+    }
+    div.years > p {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    div.years > p > span {
+        font-size: 6rem;
+    }
+    span{
+        font-size: 1rem;
+    }
+    span.error{
+        font-size: 1rem;
+        margin-top: .5rem;
+    }
+}

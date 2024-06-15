@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Age calculator app</h1>
+    <div class="date">
+      <div>
+        <span>Day</span>
+        <input type="number" name="day" id="day" placeholder="DD" min="0"  max="31">
+        <span class="error">This field required</span>
+      </div>
+      <div>
+        <span>Month</span>
+        <input type="number" name="month" id="month" placeholder="MM" min="0" max="12">
+        <span class="error">This field required</span>
+      </div>
+      <div>
+        <span>Year</span>
+        <input type="number" name="year" id="year" placeholder="YYYY" min="0">
+        <span class="error">This field required</span>
+      </div>
+    </div>
+    <div class="contentButton">
+      <hr>
+      <button type="button">
+        <img src="./assets/images/icon-arrow.svg" alt="send">
+      </button>
+    </div>
+    <div class="years">
+      <p><span id="y">--</span> years</p>
+      <p><span id="m">--</span> months</p>
+      <p><span id="d">--</span> days</p>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q/hub" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://marcovelasquezfigarella.netlify.app/" target="_blank">Marco Velasquez Figarella</a>.
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
