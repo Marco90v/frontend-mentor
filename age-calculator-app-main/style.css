@@ -133,6 +133,7 @@ span.danger{
         margin: auto;
         width: 50rem;
         padding: 3rem;
+        border-radius: 1.5rem 1.5rem 12rem 1.5rem;
     }
     div.date{
         margin-right: 20rem;
