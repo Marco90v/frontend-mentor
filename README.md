@@ -4,7 +4,8 @@ The projects are located inside this folder as in other repositories of this sam
 
 ## Main
 
-- [Contact form ("NEW")](https://github.com/Marco90v/frontend-mentor/tree/master/contact-form-main)
+- [Age calculator app ("NEW")](https://github.com/Marco90v/frontend-mentor/tree/master/age-calculator-app-main)
+- [Contact form](https://github.com/Marco90v/frontend-mentor/tree/master/contact-form-main)
 - [Recipe page](https://github.com/Marco90v/frontend-mentor/tree/master/recipe-page-main)
 - [Social links profile](https://github.com/Marco90v/frontend-mentor/tree/master/social-links-profile-main)
 - [FAQ accordion](https://github.com/Marco90v/frontend-mentor/tree/master/faq-accordion-main)
