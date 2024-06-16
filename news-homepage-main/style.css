@@ -53,14 +53,16 @@ nav{
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 100%;
+    right: -100%;
     left: 100%;
     background-color: var(--darkGrayishBlueAlfa);
-    transition: all .5s;
+    opacity: 0%;
+    transition: all .5s ease-in-out;
 }
 nav.open{
     right: 0%;
     left: 0%;
+    opacity: 100%;
 }
 nav > button{
     position: absolute;
