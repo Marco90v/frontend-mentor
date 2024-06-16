@@ -30,6 +30,15 @@ body{
 main{
     margin: 1rem;
 }
+a{
+    text-decoration: none;
+    color: var(--darkGrayishBlue);
+    transition: color .25s ease-in-out;
+}
+a:hover,
+section#tres h2 > a:hover{
+    color: var(--softRed);
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -53,14 +62,14 @@ nav{
     position: absolute;
     top: 0;
     bottom: 0;
-    right: -100%;
     left: 100%;
-    background-color: var(--darkGrayishBlueAlfa);
+    width: 0;
     opacity: 0%;
-    transition: all .5s ease-in-out;
+    background-color: var(--darkGrayishBlueAlfa);
+    transition: all .25s ease-in-out;
 }
 nav.open{
-    right: 0%;
+    width: 100%;
     left: 0%;
     opacity: 100%;
 }
@@ -85,6 +94,7 @@ nav > ul > li{
 h1{
     font-size: 2.6rem;
     margin: 1rem 0;
+    font-weight: 800;
     color: var(--veryDarkBlue);
 }
 p{
@@ -99,11 +109,15 @@ button.readMore{
     margin-top: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
+    transition: color .25s ease-in-out, background-color .25s ease-in-out;
+}
+button.readMore:hover{
+    background-color: var(--veryDarkBlue);
+    color: var(--offWhite);
 }
 section{
     margin-bottom: 3rem;
 }
-
 section#dos{
     background-color: var(--veryDarkBlue);
     color: var(--offWhite);
@@ -117,12 +131,15 @@ section#dos > h2{
     font-size: 2rem;
     margin-bottom: 2rem;
 }
+section#dos h3  > a{
+    color: var(--offWhite);
+}
 section#dos > ul > li:not(:last-child){
     margin-bottom: 2rem;
     border-bottom: var(--grayishBlue) solid .1rem;
 }
 section#dos > ul > li > h3{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 section#dos > ul > li > p{
     margin-top: .5rem;
@@ -146,7 +163,12 @@ section#tres h2{
     font-size: 1rem;
     font-size: 1.2rem;
     margin: 0.5rem 0;
+}
+section#tres h2 > a{
     color: var(--veryDarkBlue);
+}
+section#dos h3  > a:hover{
+    color: var(--softOrange);
 }
 section#tres h3{
     font-size: 2rem;
@@ -154,3 +176,87 @@ section#tres h3{
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (width >= 1300px) {
+    main{
+        width: 1216px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        margin: 4rem auto;
+    }
+    header{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        margin-bottom: 2rem;
+    }
+    button#open,
+    button#close{
+        display: none;
+    }
+    nav{
+        position: initial;
+        background-color: transparent;
+        width: auto;
+        opacity: 1;
+    }
+    nav > ul{
+        height: auto;
+        width: auto;
+        margin: auto;
+        flex-direction: row;
+        padding: 0;
+        column-gap: 2rem;
+    }
+    nav > ul > li {
+        font-size: 1.2rem;
+    }
+    h1{
+        grid-row: 2/4;
+        font-size: 4rem;
+        margin: 0;
+    }
+    p{
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    section#uno{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto auto;
+        column-gap: 5rem;
+        row-gap: 1rem;
+        width: 50rem;
+    }
+    section#uno > picture{
+        grid-column: 1/3;
+    }
+    section#dos {
+        padding: 2.5rem 2rem;
+    }
+    section#dos > ul > li > p {
+        margin-top: 1rem;
+    }
+    section#tres{
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+    section#tres h2 {
+        font-size: 1.1rem;
+    }
+    section#tres > ul{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    button.readMore{
+        margin: auto auto 0 0;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+    section#tres img {
+        width: 7rem;
+    }
+}

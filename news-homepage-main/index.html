@@ -21,18 +21,20 @@
           <img src="./assets/images/icon-menu-close.svg" alt="close">
         </button>
         <ul>
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
         </ul>
       </nav>    
     </header>
-
+    
     <section id="uno">
       <picture>
-        <img src="./assets/images/image-web-3-mobile.jpg" alt="portada">
+        <source media="(max-width: 375px)" srcset="./assets/images/image-web-3-mobile.jpg"/>
+        <source media="(min-width: 376px)" srcset="./assets/images/image-web-3-desktop.jpg"/>
+        <img src="./assets/images/image-web-3-mobile.jpg" alt="portada" srcset="./assets/images/image-web-3-mobile.jpg">
       </picture>
       <h1>The Bright Future of Web 3.0?</h1>
       <p>
@@ -46,15 +48,15 @@
       <h2>New</h2>
       <ul>
         <li>
-          <h3>Hydrogen VS Electric Cars</h3>
+          <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
           <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
         </li>
         <li>
-          <h3>The Downsides of AI Artistry</h3>
+          <h3><a href="#">The Downsides of AI Artistry</a></h3>
           <p>What are the possible adverse effects of on-demand AI image generation?</p>
         </li>
         <li>
-          <h3>Is VC Funding Drying Up?</h3>
+          <h3><a href="#">Is VC Funding Drying Up?</a></h3>
           <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </li>
       </ul>
@@ -68,7 +70,7 @@
           </picture>
           <article>
             <h3>01</h3>
-            <h2>Reviving Retro PCs</h2>
+            <h2><a href="#">Reviving Retro PCs</a></h2>
             <p>What happens when old PCs are given modern upgrades?</p>
           </article>
         </li>
@@ -78,7 +80,7 @@
           </picture>
           <article>
             <h3>02</h3>
-            <h2>Top 10 Laptops of 2022</h2>
+            <h2><a href="#">Top 10 Laptops of 2022</a></h2>
             <p>Our best picks for various needs and budgets.</p>
           </article>
         </li>
@@ -88,7 +90,7 @@
           </picture>
           <article>
             <h3>03</h3>
-            <h2>The Growth of Gaming</h2>
+            <h2><a href="#">The Growth of Gaming</a></h2>
             <p>How the pandemic has sparked fresh opportunities.</p>
           </article>
         </li>
@@ -99,8 +101,8 @@
   
   <footer>
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl/hub" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://marcovelasquezfigarella.netlify.app/" target="_blank">Marco Velasquez Figarella</a>.
     </div>
   </footer>
   <script src="./script.js"></script>

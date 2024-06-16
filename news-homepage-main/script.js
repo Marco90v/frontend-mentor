@@ -8,3 +8,10 @@ function toggleNav(e) {
 
 openBtn.addEventListener("click", toggleNav)
 closeBtn.addEventListener("click", toggleNav)
+
+function resize(e) {
+    if(e.target.screen.availWidth >= 1300){
+        nav.classList.remove("open")
+    }
+}
+window.addEventListener('resize', resize)
