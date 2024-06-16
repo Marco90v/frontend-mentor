@@ -26,6 +26,7 @@ body{
     min-height: 100vh;
     font-size: 15px;
     color: var(--darkGrayishBlue);
+    background-color: var(--offWhite);
 }
 main{
     margin: 1rem;
