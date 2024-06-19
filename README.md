@@ -4,7 +4,7 @@ The projects are located inside this folder as in other repositories of this sam
 
 ## Main
 
-- [Blog preview card ("NEW")](https://github.com/Marco90v/frontend-mentor/tree/blog-preview-card-main)
+- [Blog preview card ("NEW")](https://github.com/Marco90v/frontend-mentor/tree/master/blog-preview-card-main)
 - [Notifications pages](https://github.com/Marco90v/frontend-mentor/tree/master/notifications-page-main)
 - [News homepage](https://github.com/Marco90v/frontend-mentor/tree/master/news-homepage-main)
 - [Age calculator app](https://github.com/Marco90v/frontend-mentor/tree/master/age-calculator-app-main)
