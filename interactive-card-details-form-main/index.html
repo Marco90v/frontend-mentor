@@ -10,6 +10,7 @@
 <body>
   <main>
     <header>
+      <h1>Interactive card details form</h1>
       <div class="portada">
         <picture>
           <source srcset="./images/bg-main-desktop.png" media="(min-width: 1024px)">
@@ -47,17 +48,17 @@
     <div class="contentDataCard">
       <form>
         <div class="name">
-          <label for="">Cardholder Name</label>
+          <label for="cardName">Cardholder Name</label>
           <input type="text" name="cardName" id="cardName" placeholder="e.g. Jane Appleseed">
           <span class="error"></span>
         </div>
         <div class="numberCard">
-          <label for="">Card Number</label>
+          <label for="cardNumber">Card Number</label>
           <input type="text" name="cardNumber" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000">
           <span class="error"></span>
         </div>
         <div class="expDataCard">
-          <label class="exData" for="">Exp. Date (MM/YY)</label>
+          <label class="exData" for="mm">Exp. Date (MM/YY)</label>
           <div class="inputMM">
             <input class="MM" type="number" name="mm" id="mm" placeholder="MM" max="12" min="01">
             <span class="error"></span>
@@ -66,7 +67,7 @@
             <input class="YY" type="number" name="yy" id="yy" placeholder="YY" max="99" min="01">
             <span class="error"></span>
           </div>
-          <label class="infoCVC" for="">CVC</label>
+          <label class="infoCVC" for="cvc">CVC</label>
           <div class="inputCVC">
             <input class="dataCVC" type="number" name="cvc" id="cvc" placeholder="e.g. 123" max="999">
             <span class="error"></span>
@@ -74,7 +75,9 @@
         </div>
         <button type="submit" id="send">Confirm</button>
         <div class="completed">
-          <img src="./images/icon-complete.svg" alt="completed">
+          <picture>
+            <img src="./images/icon-complete.svg" alt="completed">
+          </picture>
           <p class="thank">Thank you!</p>
           <p class="details">We've added your card details</p>
           <button type="button" id="btnCompleted">Continue</button>

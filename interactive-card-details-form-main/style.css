@@ -31,6 +31,10 @@ body{
 main{
     margin: 0 0 auto 0;
 }
+h1{
+    position: absolute;
+    opacity: 0;
+}
 .portada, .content{
     position: relative;
 }
@@ -205,7 +209,7 @@ div.failure > .error{
 .completed.show{
     display: grid;
 }
-.completed > img{
+.completed > picture > img{
     width: 5rem;
     margin: auto auto 1rem auto;
 }
