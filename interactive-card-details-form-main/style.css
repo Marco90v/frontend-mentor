@@ -91,8 +91,9 @@ main{
     margin: 5rem 2rem 2rem 2rem;
 }
 form{
-    display: grid;
     gap: 1.5rem;
+    display: grid;
+    max-width: 510px;
 }
 input{
     font-size: 1.2rem;
@@ -100,9 +101,21 @@ input{
     padding: 0.8rem 1rem;
     border-radius: 0.5rem;
     border: solid .1rem var(--LightGrayishViolet);
+    outline: none;
+    cursor: pointer;
 }
 input::placeholder{
     color: var(--LightGrayishViolet);
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+}
+input[type=number]{
+    -moz-appearance:textfield;
+}
+input:focus{
+    border-color: var(--VeryDarkViolet);
 }
 label{
     font-size: .8rem;
@@ -153,6 +166,22 @@ button[type="submit"]{
     background-color: var(--VeryDarkViolet);
     cursor: pointer;
 }
+.inputMM,
+.inputYY{
+    display: flex;
+    flex-direction: column;
+}
+.error{
+    color: var(--Red);
+    opacity: 0%;
+    transition: opacity .25s ease-in-out;
+}
+div.failure > input{
+    border-color: var(--Red);
+}
+div.failure > .error{
+    opacity: 100%;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 @media (width >= 768px) {
@@ -196,6 +225,9 @@ button[type="submit"]{
         bottom: 0;
         position: absolute;
         transform: translateX(-50%);
+    }
+    .MM, .YY{
+        width: 7rem;
     }
 }
 @media (width >= 1440px) {
