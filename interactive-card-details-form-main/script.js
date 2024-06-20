@@ -3,6 +3,8 @@ const errorFormat = "Wrong format, numbers only"
 const classFailure = "failure"
 
 const submit = document.querySelector("button#send")
+const btnCompleted = document.querySelector("button#btnCompleted")
+const completed = document.querySelector("div.completed")
 const inputmm = document.querySelector("input#mm")
 const inputyy = document.querySelector("input#yy")
 const inputcvc = document.querySelector("input#cvc")
@@ -35,6 +37,9 @@ function send(e) {
     const mm = validate("input#mm", "div.inputMM", "div.inputMM>span")
     const yy = validate("input#yy", "div.inputYY", "div.inputYY>span")
     const cvc = validate("input#cvc", "div.inputCVC", "div.inputCVC>span")
+    if(name && number && mm && yy && cvc){
+        completed.classList.add("show")
+    }
 }
 
 function validateDate({target:{value}}, input, min, max) {
@@ -42,7 +47,14 @@ function validateDate({target:{value}}, input, min, max) {
     if(value > max) input.value = max
 }
 
+function end() {
+    const inputs = document.querySelectorAll("input")
+    inputs.forEach(e => e.value = "");
+    completed.classList.remove("show")
+}
+
 submit.addEventListener("click", send)
+btnCompleted.addEventListener("click", end)
 inputmm.addEventListener("input", (e)=>validateDate(e, inputmm, 0, 12))
 inputyy.addEventListener("input", (e)=>validateDate(e, inputyy, 0, 99))
 inputcvc.addEventListener("input", (e)=>validateDate(e, inputcvc, 0, 999))

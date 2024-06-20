@@ -94,6 +94,7 @@ form{
     gap: 1.5rem;
     display: grid;
     max-width: 510px;
+    position: relative;
 }
 input{
     font-size: 1.2rem;
@@ -157,10 +158,9 @@ label{
     display: grid;
     gap: .5rem;
 }
-button[type="submit"]{
+button[type="submit"], button{
     padding: 1rem;
     font-size: 1.2rem;
-    /* font-weight: bold; */
     color: var(--White);
     border-radius: .5rem;
     background-color: var(--VeryDarkViolet);
@@ -181,6 +181,37 @@ div.failure > input{
 }
 div.failure > .error{
     opacity: 100%;
+}
+.completed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    display: none;
+}
+.completed.show{
+    display: grid;
+}
+.completed > img{
+    width: 5rem;
+    margin: auto auto 1rem auto;
+}
+.completed > .thank{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    color: var(--VeryDarkViolet);
+}
+.completed > .details{
+    color: var(--DarkGrayishViolet);
+    font-size: 1.2rem;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -234,11 +265,6 @@ div.failure > .error{
     main{
         grid-template-columns: auto 1fr;
     }
-    /* .portada, .portada > picture > img {
-        height: 100%;
-        width: 100%;
-        max-height: 100%;
-    } */
     .backCard{
         left: 60%;
     }
