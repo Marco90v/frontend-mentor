@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 :root{
     /* ### Primary */
-    --LinearGradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%); /*active input border*/
+    --LinearGradient: hsl(249, 99%, 64%) , hsl(278, 94%, 30%); /*active input border*/
     --Red: hsl(0, 100%, 66%); /*input errors*/
     
     /* ### Neutral */
@@ -104,6 +104,9 @@ input{
     border: solid .1rem var(--LightGrayishViolet);
     outline: none;
     cursor: pointer;
+    position: relative;
+
+    
 }
 input::placeholder{
     color: var(--LightGrayishViolet);
@@ -116,7 +119,10 @@ input[type=number]{
     -moz-appearance:textfield;
 }
 input:focus{
-    border-color: var(--VeryDarkViolet);
+    border: solid .1rem transparent;
+    background: 
+    linear-gradient(white 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(var(--LinearGradient)) border-box;
 }
 label{
     font-size: .8rem;
