@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+/*
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+*/
+:root{
+    /* ### Primary */
+    --SoftRed: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --DarkDesaturatedCyan: hsl(167, 40%, 24%); /*(graphic design text)*/
+    --DarkBlue: hsl(198, 62%, 26%); /*(photography text)*/
+    --DarkModerateCyan: hsl(168, 34%, 41%); /*(footer)*/
+
+    /* ### Neutral */
+    --VeryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+    --VeryDarkGrayishBlue: hsl(213, 9%, 39%);
+    --DarkGrayishBlue: hsl(232, 10%, 55%);
+    --GrayishBlue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+header{
+    position: relative;
+}
+header{
+    margin-bottom: -0.2rem;
+}
+h1{
+    font-family: "Fraunces", serif;
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--White);
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 800;
+}
+nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 2rem 1.5rem;
+}
+ul{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+}
+ul.menu{
+    overflow: hidden;
+    height: 0%;
+    padding: 0%;
+
+    position: absolute;
+    background-color: var(--White);
+    color: var(--DarkGrayishBlue);
+    top: 7rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    font-size: 1.3rem;
+    z-index: 1;
+    opacity: 0%;
+    transition: opacity .25s ease-in-out;
+
+    &::before{
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -2rem;
+        right: 0;
+        border-right: 1rem solid var(--White);
+        border-bottom: 1rem solid var(--White);
+        border-top: 1rem solid transparent;
+        border-left: 1rem solid transparent;
+    }
+}
+ul.menu.show{
+    overflow: initial;
+    padding: 3rem;
+    height: 20.5rem;
+    opacity: 100%;
+}
+nav > ul.menu > li > a{
+    color: var(--DarkGrayishBlue);
+    text-decoration: none;
+}
+nav > ul.menu >li.contact{
+    margin-top: 1rem;
+}
+nav > ul.menu >li.contact > a{
+    font-family: "Fraunces", serif;
+    color: var(--VeryDarkDesaturatedBlue);
+    background-color: var(--Yellow);
+    padding: 1.2rem 2rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+img{
+    max-width: 100%;
+}
+.arrow-down{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content{
+    padding: 3rem 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+.content > h2{
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 0 1rem;
+    color: var(--VeryDarkDesaturatedBlue);
+}
+.content > p{
+    color: var(--DarkGrayishBlue);
+    line-height: 1.5rem;
+}
+.content > button{
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    color: var(--VeryDarkDesaturatedBlue);
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    background-color: transparent;
+    position: relative;
+}
+.content > button::before{
+    content: "";
+    width: 7.5rem;
+    position: absolute;
+    height: 0.5rem;
+    left: -.3rem;
+    border-radius: 2rem;
+    bottom: -0.2rem;
+    z-index: -1;
+    opacity: 30%;
+    transition: opacity .25s ease-in-out;
+}
+button.btn-yellow::before{
+    background-color: var(--Yellow);
+}
+button.btn-red::before{
+    background-color: var(--SoftRed);
+}
+.content > button:hover:before{
+    opacity: 100%;
+}
+article.last{
+    position: relative;
+    margin-bottom: -.2rem;
+}
+article.last > .content{
+    position: absolute;
+    bottom: 0;
+}
+p.green{
+    color: var(--DarkDesaturatedCyan);
+}
+p.blue{
+    color: var(--DarkBlue);
+}
+.client > h2{
+    font-family: "Fraunces", serif;
+    margin-top: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    color: var(--GrayishBlue);
+}
+.client > article{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.client > article img{
+    width: 4rem;
+    border-radius: 50%;
+}
+.client > article > p{
+    color: var(--VeryDarkGrayishBlue);
+    margin: 1.5rem 0;
+    line-height: 1.5rem;
+    text-align: center;
+}
+.client > article > div{
+    text-align: center;
+}
+.client .name{
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    color: var(--VeryDarkDesaturatedBlue);
+}
+.client .profession{
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    color: var(--GrayishBlue);
+}
+footer > section.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+footer > section.images > picture{
+    display: flex;
+}
+.footInfo{
+    --footer: 168, 34%, 41%;
+    background-color: hsla(var(--footer), .7);
+    text-align: center;
+}
+.footInfo > img{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.footInfo > ul{
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--DarkDesaturatedCyan);
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+.footInfo > ul a{
+    color: var(--DarkDesaturatedCyan);
+    text-decoration: none;
+    transition: color .25s ease-in-out;
+}
+.footInfo > ul a:hover{
+    color: var(--White);
+}
+.redes{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.redes img{
+    transition: all .25s ease-in-out;
+}
+.redes img:hover{
+    filter: brightness(0) invert(1);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (width >= 765px) {
+    ul.menu{
+        overflow: initial;
+        position: initial;
+        height: auto;
+        opacity: 1;
+        flex-direction: row;
+        column-gap: 3rem;
+        background-color: transparent;
+    }
+    nav > ul.menu > li.contact {
+        margin-top: 0;
+    }
+    .btn-menu{
+        display: none;
+    }
+    nav > ul.menu > li > a {
+        color: var(--White);
+    }
+    nav > ul.menu >li.contact > a {
+        background-color: var(--White);
+        transition: background-color .25s ease-in-out;
+    }
+    nav > ul.menu >li.contact > a:hover {
+        --WhiteHover: hsla(0, 0%, 100%, .5);
+        background-color: var(--WhiteHover);
+    }
+    main > section > article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: -1rem;
+    }
+    article.last{
+        display: inline-block;
+    }
+    section.info{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    section.info > article:first-child,
+    section.info > article:nth-child(2){
+        grid-column: 1 / 3;
+    }
+    section.info > article:first-child > div:first-child{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    section.info > article:first-child > div.content{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .content{
+        align-items: flex-start;
+        padding: 3rem 9rem;
+        text-align: left;
+    }
+    .content > h2{
+        padding: 0;
+        font-size: 2.3rem;
+    }
+    section.client{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        padding: 5rem;
+    }
+    section.client > h2{
+        grid-column: 1 / 4;
+    }
+    footer > section.images {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .footInfo > ul{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footInfo > ul.about{
+        width: 20rem;
+    }
+    .footInfo > ul.redes{
+        width: 15rem;
+    }
+}
