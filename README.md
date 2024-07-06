@@ -4,7 +4,8 @@ The projects are located inside this folder as in other repositories of this sam
 
 ## Main
 
-- [Interactive card details form ("NEW")](https://github.com/Marco90v/frontend-mentor/tree/master/interactive-card-details-form-main)
+- [Agency landing page ("NEW")](https://github.com/Marco90v/frontend-mentor/tree/master/sunnyside-agency-landing-page-main)
+- [Interactive card details form](https://github.com/Marco90v/frontend-mentor/tree/master/interactive-card-details-form-main)
 - [Blog preview card](https://github.com/Marco90v/frontend-mentor/tree/master/blog-preview-card-main)
 - [Notifications pages](https://github.com/Marco90v/frontend-mentor/tree/master/notifications-page-main)
 - [News homepage](https://github.com/Marco90v/frontend-mentor/tree/master/news-homepage-main)
