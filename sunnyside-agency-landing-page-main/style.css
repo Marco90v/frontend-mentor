@@ -67,16 +67,17 @@ nav{
 ul{
     list-style: none;
 }
+button{
+    cursor: pointer;
+}
 ul.menu{
     overflow: hidden;
     height: 0%;
     padding: 0%;
 
     position: absolute;
-    cursor: pointer;
     background-color: var(--White);
     color: var(--DarkGrayishBlue);
-    /* padding: 3rem; */
     top: 7rem;
     left: 1.5rem;
     right: 1.5rem;
@@ -123,7 +124,7 @@ nav > ul.menu >li.contact > a{
     padding: 1.2rem 2rem;
     border-radius: 2rem;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
 }
 img{
@@ -168,19 +169,22 @@ img{
     content: "";
     width: 7.5rem;
     position: absolute;
-    /* background-color: var(--Yellow); */
     height: 0.5rem;
     left: -.3rem;
     border-radius: 2rem;
     bottom: -0.2rem;
     z-index: -1;
     opacity: 30%;
+    transition: opacity .25s ease-in-out;
 }
 button.btn-yellow::before{
     background-color: var(--Yellow);
 }
 button.btn-red::before{
     background-color: var(--SoftRed);
+}
+.content > button:hover:before{
+    opacity: 100%;
 }
 article.last{
     position: relative;
@@ -243,7 +247,6 @@ footer > section.images > picture{
     display: flex;
 }
 .footInfo{
-    /* background-color: var(--DarkModerateCyan); */
     --footer: 168, 34%, 41%;
     background-color: hsla(var(--footer), .7);
     text-align: center;
@@ -262,12 +265,107 @@ footer > section.images > picture{
 .footInfo > ul a{
     color: var(--DarkDesaturatedCyan);
     text-decoration: none;
+    transition: color .25s ease-in-out;
+}
+.footInfo > ul a:hover{
+    color: var(--White);
 }
 .redes{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
+.redes img{
+    transition: all .25s ease-in-out;
+}
+.redes img:hover{
+    filter: brightness(0) invert(1);
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (width >= 765px) {
+    ul.menu{
+        overflow: initial;
+        position: initial;
+        height: auto;
+        opacity: 1;
+        flex-direction: row;
+        column-gap: 3rem;
+        background-color: transparent;
+    }
+    nav > ul.menu > li.contact {
+        margin-top: 0;
+    }
+    .btn-menu{
+        display: none;
+    }
+    nav > ul.menu > li > a {
+        color: var(--White);
+    }
+    nav > ul.menu >li.contact > a {
+        background-color: var(--White);
+        transition: background-color .25s ease-in-out;
+    }
+    nav > ul.menu >li.contact > a:hover {
+        --WhiteHover: hsla(0, 0%, 100%, .5);
+        background-color: var(--WhiteHover);
+    }
+    main > section > article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: -1rem;
+    }
+    article.last{
+        display: inline-block;
+    }
+    section.info{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    section.info > article:first-child,
+    section.info > article:nth-child(2){
+        grid-column: 1 / 3;
+    }
+    section.info > article:first-child > div:first-child{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    section.info > article:first-child > div.content{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .content{
+        align-items: flex-start;
+        padding: 3rem 9rem;
+        text-align: left;
+    }
+    .content > h2{
+        padding: 0;
+        font-size: 2.3rem;
+    }
+    section.client{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        padding: 5rem;
+    }
+    section.client > h2{
+        grid-column: 1 / 4;
+    }
+    footer > section.images {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .footInfo > ul{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footInfo > ul.about{
+        width: 20rem;
+    }
+    .footInfo > ul.redes{
+        width: 15rem;
+    }
+}
