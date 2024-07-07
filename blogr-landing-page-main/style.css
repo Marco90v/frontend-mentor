@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* font-family: "Ubuntu", sans-serif;
+font-weight: 300;
+font-style: normal; */
+:root{
+    /* ### Primary */
+    --LightRed: hsl(356, 100%, 66%); /* (CTA text)*/
+    --VeryLightRed: hsl(355, 100%, 74%); /*(CTA hover background)*/
+    --VeryDarkBlue: hsl(208, 49%, 24%); /*(headings)*/
+
+    /* ### Neutral */
+    --White: hsl(0, 0%, 100%); /*(text)*/
+    --GrayishBlue: hsl(240, 2%, 79%); /*(footer text)*/
+    --VeryDarkGrayishBlue: hsl(207, 13%, 34%); /*(body copy)*/
+    --VeryDarkBlackBlue: hsl(240, 10%, 16%); /*(footer background)*/
+
+    /* ### Gradient */
+
+    /* Background gradient - Intro/CTA mobile nav: */
+    --VeryLightRed: hsl(13, 100%, 72%);
+    --LightRed: hsl(353, 100%, 62%);
+
+    /* Background gradient - body: */
+    --VeryDarkGrayBlue: hsl(237, 17%, 21%);
+    --VeryDarkDesaturatedBlue: hsl(237, 23%, 32%);
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+header{
+    position: relative;
+    border-radius: 0rem 0rem 0rem 6rem;
+    overflow: hidden;
+}
+.contentImg{
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 38rem;
+    background: linear-gradient(0deg, rgba(255, 61, 84, 1) 0%, rgba(255, 143, 112, 1) 100%);
+}
+.contentImg > picture > img{
+    width: 85rem;
+    margin-left: -22rem;
+    margin-top: -16rem;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 3rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    cursor: pointer;
+}
+nav > button{
+    background-color: transparent;
+}
+header > div.content{
+    color: var(--White);
+    position: absolute;
+    top: 12rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    row-gap: 2rem;
+}
+header > div.content > h1{
+    color: var(--White);
+    font-size: 2rem;
+    padding: 0 2.15rem;
+}
+header > div.content > p{
+    font-size: 1.2rem;
+    padding: 0 2rem;
+}
+.startLearn{
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+.startLearn > button{
+    background-color: transparent;
+    border-radius: 10rem;
+    font-size: 1rem;
+    font-weight: 800;
+    width: 9rem;
+}
+button.primary{
+    color: var(--VeryLightRed);
+    background-color: var(--White);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+button.secundary{
+    color: var(--White);
+    border: solid 0.1rem var(--White);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
