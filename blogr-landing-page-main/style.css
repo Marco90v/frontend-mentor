@@ -44,14 +44,32 @@ body{
 }
 header{
     position: relative;
-    border-radius: 0rem 0rem 0rem 6rem;
-    overflow: hidden;
+}
+ul{
+    list-style: none;
+    padding: 1rem;
+}
+li{
+    padding: .5rem;
+}
+ul.primary-menu > li > span{
+    color: var(--VeryDarkBlue);
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+}
+ul.primary-menu > li > span > img{
+    transition: all .25s ease-in-out;
+}
+ul.primary-menu > li > span > img.rotate{
+    transform: rotate(-180deg);
 }
 .contentImg{
     max-width: 100%;
     overflow: hidden;
     max-height: 38rem;
     background: linear-gradient(0deg, rgba(255, 61, 84, 1) 0%, rgba(255, 143, 112, 1) 100%);
+    border-radius: 0rem 0rem 0rem 6rem;
 }
 .contentImg > picture > img{
     width: 85rem;
@@ -73,6 +91,71 @@ button{
 }
 nav > button{
     background-color: transparent;
+}
+nav > div.menu{
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    background-color: var(--White);
+    border-radius: 0.2rem;
+    padding: 0;
+    z-index: 1;
+    text-align: center;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    box-shadow: 0 1rem 2rem -1rem black;
+    transition: all .25s ease-in-out;
+}
+nav > div.menu.show{
+    max-height: 1000px;
+    padding: 2rem 0.5rem;
+    opacity: 1;
+}
+ul.sub-menu{
+    --GrayishBlue:hsla(240, 2%, 79%, 0.3);
+    background-color: var(--GrayishBlue);
+    border-radius: 0.2rem;
+    overflow: hidden;
+    margin-top: 0;
+    max-height: 0;
+    padding: 0;
+    transition: all .25s ease-in-out;
+}
+ul.sub-menu.show{
+    margin-top: 1rem;
+    max-height: 1000px;
+    padding: 1rem;
+}
+ul.sub-menu > li{
+    --VeryDarkBlue:hsla(208, 49%, 24%, 0.7);
+    color: var(--VeryDarkBlue);
+    font-weight: 600;
+}
+.loginButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 2rem 0rem 2rem;
+    border-top: solid 1px var(--GrayishBlue);
+    margin: 0 1.5rem;
+}
+.login,
+.sign{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 8rem;
+}
+.login{
+    background-color: transparent;
+    color: var(--VeryDarkBlue);
+}
+.sign{
+    background: linear-gradient(270deg, rgba(255, 61, 84, 1) 0%, rgba(255, 143, 112, 1) 100%);
+    border-radius: 5rem;
+    color: var(--White);
 }
 header > div.content{
     color: var(--White);
@@ -118,6 +201,19 @@ button.primary{
 button.secundary{
     color: var(--White);
     border: solid 0.1rem var(--White);
+}
+button#toogleMenu,
+button#toogleMenu.show img{
+    display: none;
+}
+button#toogleMenu.show{
+    display: initial;
+}
+button#toogleMenu.show.close img.open{
+    display: initial;
+}
+button#toogleMenu.show.open img.close{
+    display: initial;
 }
 
 .attribution { font-size: 11px; text-align: center; }

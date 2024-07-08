@@ -18,11 +18,50 @@
       <picture>
         <img src="./images/logo.svg" alt="logo">
       </picture>
-      <button>
+      <button id="toogleMenu" class="show close">
         <picture>
-          <img src="./images/icon-hamburger.svg" alt="menu">
+          <img class="open" src="./images/icon-hamburger.svg" alt="menu">
+        </picture>
+        <picture>
+          <img class="close" src="./images/icon-close.svg" alt="menu">
         </picture>
       </button>
+      <div class="menu">
+        <ul class="primary-menu">
+          <li>
+            <span>Product <img src="./images/icon-arrow-dark.svg" alt="arrow"></span>
+            <ul class="sub-menu">
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
+          </li>
+          <li>
+            <span>Company <img src="./images/icon-arrow-dark.svg" alt="arrow"></span>
+            <ul class="sub-menu">
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+          </li>
+          <li>
+            <span>Connect <img src="./images/icon-arrow-dark.svg" alt="arrow"></span>
+            <ul class="sub-menu">
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
+          </li>
+        </ul>
+        <!-- <hr> -->
+        <div class="loginButtons">
+          <button class="login">Login</button>
+          <button class="sign">Sign Up</button>
+        </div>
+      </div>
     </nav>
     <div class="content">
       <h1>A modern publishing platform</h1>
@@ -33,29 +72,6 @@
       </div>
     </div>
   </header>
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
 
   Designed for the future
 
@@ -107,5 +123,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
