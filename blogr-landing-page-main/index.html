@@ -11,6 +11,8 @@
   <header>
     <div class="contentImg">
       <picture>
+        <source media="(min-width: 769px)" srcset="./images/bg-pattern-intro-desktop.svg">
+        <source media="(max-width: 768px)" srcset="./images/bg-pattern-intro-mobile.svg">
         <img src="./images/bg-pattern-intro-mobile.svg" alt="bg-pattern-intro-mobile">
       </picture>
     </div>
@@ -29,7 +31,14 @@
       <div class="menu">
         <ul class="primary-menu">
           <li>
-            <span>Product <img src="./images/icon-arrow-dark.svg" alt="arrow"></span>
+            <span>
+              Product
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/icon-arrow-light.svg">
+                <source media="(max-width: 1199px)" srcset="./images/icon-arrow-dark.svg">
+                <img src="./images/icon-arrow-dark.svg" alt="arrow">
+              </picture>
+            </span>
             <ul class="sub-menu">
               <li>Overview</li>
               <li>Pricing</li>
@@ -39,7 +48,14 @@
             </ul>
           </li>
           <li>
-            <span>Company <img src="./images/icon-arrow-dark.svg" alt="arrow"></span>
+            <span>
+              Company
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/icon-arrow-light.svg">
+                <source media="(max-width: 1199px)" srcset="./images/icon-arrow-dark.svg">
+                <img src="./images/icon-arrow-dark.svg" alt="arrow">
+              </picture>
+            </span>
             <ul class="sub-menu">
               <li>About</li>
               <li>Team</li>
@@ -48,7 +64,14 @@
             </ul>
           </li>
           <li>
-            <span>Connect <img src="./images/icon-arrow-dark.svg" alt="arrow"></span>
+            <span>
+              Connect
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/icon-arrow-light.svg">
+                <source media="(max-width: 1199px)" srcset="./images/icon-arrow-dark.svg">
+                <img src="./images/icon-arrow-dark.svg" alt="arrow">
+              </picture>
+            </span>
             <ul class="sub-menu">
               <li>Contact</li>
               <li>Newsletter</li>
@@ -74,9 +97,13 @@
   <main>
     <section class="section-1">
       <h1>Designed for the future</h1>
-      <picture>
-        <img src="./images/illustration-editor-mobile.svg" alt="illustration-editor">
-      </picture>
+      <div class="img">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./images/illustration-editor-desktop.svg">
+          <source media="(max-width: 1199px)" srcset="./images/illustration-editor-mobile.svg">
+          <img src="./images/illustration-editor-mobile.svg" alt="illustration-editor">
+        </picture>
+      </div>
       <div class="content">
         <h2>Introducing an extensible editor</h2>
         <p>
@@ -110,9 +137,13 @@
       </div>
     </section>
     <section class="section-3">
-      <picture>
-        <img src="./images/illustration-laptop-mobile.svg" alt="illustration-laptop">
-      </picture>
+      <div class="img">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./images/illustration-laptop-desktop.svg">
+          <source media="(max-width: 1199px)" srcset="./images/illustration-laptop-mobile.svg">
+          <img src="./images/illustration-laptop-mobile.svg" alt="illustration-laptop">
+        </picture>
+      </div>
       <div class="content">
         <h2>Free, open, simple</h2>
         <p>

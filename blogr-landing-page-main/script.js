@@ -15,8 +15,17 @@ function toggleMenu() {
     menu.classList.toggle("show");
 }
 
+function resize(width) {
+    if (width > 1200) btnMenu.classList.remove("show");
+    if (width < 1200) btnMenu.classList.add("show");
+}
+
 primaryMenu.forEach(elem => {
     elem.addEventListener("click", toggleSubMenu);
 });
 
 btnMenu.addEventListener("click", toggleMenu);
+
+window.addEventListener("resize", ({target:{innerWidth}})=>resize(innerWidth))
+
+resize(window.screen.width);

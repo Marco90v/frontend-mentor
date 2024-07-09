@@ -69,6 +69,7 @@ ul.primary-menu > li > span > img.rotate{
     overflow: hidden;
     max-height: 38rem;
     background: linear-gradient(0deg, rgba(255, 61, 84, 1) 0%, rgba(255, 143, 112, 1) 100%);
+    /* background: linear-gradient(270deg, rgba(255,61,85,1) 0%, rgba(255,143,112,1) 100%); */
     border-radius: 0rem 0rem 0rem 6rem;
 }
 .contentImg > picture > img{
@@ -225,7 +226,10 @@ main{
     align-items: center;
     gap: 2rem;
     text-align: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+.section-1 > div.img > picture > img{
+    width: 100%;
 }
 .section-1 > h1{
     margin-top: 5rem;
@@ -318,3 +322,194 @@ footer a{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (width >= 1024px) {
+    .contentImg{
+        background: linear-gradient(270deg, rgba(255,61,85,1) 0%, rgba(255,143,112,1) 100%);
+    }
+    .contentImg > picture > img {
+        width: 180rem;
+        margin-left: -17rem;
+        margin-top: -74rem;
+    }
+    nav{
+        margin: 3rem 10rem;
+    }
+    nav > div.menu{
+        opacity: 1;
+        padding: 1rem;
+        padding: 0 0 0 2rem;
+        position: initial;
+        border-radius: 0;
+        max-height: max-content;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: none;
+        background-color: transparent;
+    }
+    nav > div.menu > ul.primary-menu{
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    .loginButtons{
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        border-top: 0;
+    }
+    ul.primary-menu > li > span {
+        color: var(--White);
+        cursor: pointer;
+    }
+    ul.primary-menu > li > span:hover{
+        text-decoration: underline;
+    }
+    .login, .sign {
+        font-size: 1rem;
+    }
+    .login {
+        color: var(--White);
+        border-radius: 5rem;
+        padding: 0.7rem 1rem;
+        transition: all .25s ease-in-out;
+    }
+    .login:hover{
+        color: var(--LightRed);
+        background-color: var(--White);
+    }
+    .sign {
+        background: var(--White);
+        color: var(--LightRed);
+        padding: 0.7rem 1rem;
+        font-weight: 500;
+        transition: all .25s ease-in-out;
+    }
+    .sign:hover{
+        background: hsla(0deg 0% 100% / 50%);
+        color: var(--White);
+    }
+    ul.sub-menu{
+        position: absolute;
+        background-color: var(--White);
+    }
+    ul.sub-menu > li{
+        cursor: pointer;
+        transition: color .25s ease-in-out;
+    }
+    ul.sub-menu > li:hover{
+        color: var(--VeryDarkDesaturatedBlue);
+    }
+    header > div.content > h1 {
+        font-size: 3.5rem;
+    }
+    button.primary:hover,
+    button.secundary:hover{
+        transition: all .25s ease-in-out;
+    }
+    button.primary:hover{
+        background-color: hsla(0deg 0% 100% / 50%);
+        color: var(--White);
+    }
+    button.secundary:hover{
+        background-color: var(--White);
+        color: var(--LightRed);
+    }
+    .section-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        padding: 5rem 0 0 5rem;
+        position: relative;
+    }
+    .section-1 > h1{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    .section-1 > div.img{
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+    }
+    .section-1 > div.img > picture > img{
+        position: absolute;
+        top: 4rem;
+        width: 135%;
+        right: -15rem;
+    }
+    .content{
+        text-align: left;        
+    }
+    div.img{
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        height: 200%;
+    }
+    .section-2 img, .section-3 img {
+        top: -15%;
+        left: 7%;
+        width: 44%;
+    }
+    img.circle {
+        top: -35rem;
+        width: 77%;
+        left: -17%;
+        transform: none;
+    }
+    .section-2 > .content {
+        padding: 1rem 8rem 8rem 55%;
+        text-align: left;
+    }
+    .section-2 > .content > h2 {
+        margin-top: 8.5rem;
+        font-size: 2rem;
+    }
+    .section-2 > .content > p {
+        margin: 0;
+    }
+    .section-3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        align-items: center;
+        overflow: initial;
+        margin: 19rem 0;
+    }
+    .section-3 > div.img{
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        height: 250%;
+    }
+    .section-3 img {
+        position: absolute;
+        top: 10%;
+        left: -18%;
+        width: 139%;
+    }
+    .section-3 .content{
+        padding: 1rem 6rem 1rem 0;
+    }
+    .section-3 .content > h2{
+        font-size: 2rem;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr auto;
+        padding: 5rem 7rem 0 7rem;
+    }
+    footer > ul{
+        flex-direction: row;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer a:hover{
+        text-decoration: underline;
+    }
+    .attribution{
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+}
