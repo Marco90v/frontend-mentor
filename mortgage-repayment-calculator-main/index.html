@@ -9,59 +9,86 @@
 </head>
 <body>
   <main>
-    <div class="content">
+    <div class="contentInput">
       <div class="header">
         <h1>Mortgage Calculator</h1>
-        <button>Clear All</button>
+        <button class="clear">Clear All</button>
       </div>
       <form>
-        <label for="amount">Mortgage Amount</label>
-        <input type="number" name="amount" id="amount">
-        <label for="term">Mortgage Term</label>
-        <input type="number" name="term" id="term">
-        <label for="term">Interest Rate</label>
-        <input type="number" name="rate" id="rate">
+        <div class="inputGroup">
+          <label for="amount">Mortgage Amount</label>
+          <div class="input first">
+            <span class="coin">£</span>
+            <input type="number" name="amount" id="amount" min="0">
+          </div>
+        </div>
+        <div class="inputGroup">
+          <label for="term">Mortgage Term</label>
+          <div class="input">
+            <input type="number" name="term" id="term" min="0">
+            <span class="years">years</span>
+          </div>
+        </div>
+        <div class="inputGroup">
+          <label for="rate">Interest Rate</label>
+          <div class="input">
+            <input type="number" name="rate" id="rate" min="0" step="any">
+            <span class="percentage">%</span>
+          </div>
+        </div>
         <div class="type">
           <label for="radioContent">Mortgage Type</label>
           <div class="radioContent">
-            <input type="radio" name="repayment" id="repayment" value="repayment">
+            <input type="radio" name="type" id="repayment" value="repayment">
             <label for="repayment">Repayment</label>
           </div>
           <div class="radioContent">
-            <input type="radio" name="only" id="only" value="only">
+            <input type="radio" name="type" id="only" value="only">
             <label for="only">Interest Only</label>
           </div>
         </div>
-        <button type="submit">Calculate Repayments</button>
+        <button type="submit">
+          <picture>
+            <img src="./assets/images/icon-calculator.svg" alt="calculator">
+          </picture>
+          Calculate Repayments
+        </button>
       </form>
     </div>
     <div class="result">
       <!-- Empty results start -->
-      <div class="contentImg">
-        <picture>
-          <img src="./assets/images/illustration-empty.svg" alt="" srcset="">
-        </picture>
-      </div>
-      <div class="contentResult">
-        <h2>Results shown here</h2>
-        <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+      <div class="preResult">
+        <div class="contentImg">
+          <picture>
+            <img src="./assets/images/illustration-empty.svg" alt="" srcset="">
+          </picture>
+        </div>
+        <div class="contentResult">
+          <h2>Results shown here</h2>
+          <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+        </div>
       </div>
       <!-- Empty results end -->
+      <!-- Completed results start -->
+      <div class="postResult hidden">
+        <div class="contentResult">
+          <h2>Your results</h2>
+          <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
+        </div>
+        <div class="repayments">
+          <div class="monthly">
+            <p>Your monthly repayments</p>
+            <p class="pay"></p>
+          </div>
+          <dvi class="total">
+            <p>Total you'll repay over the term</p>
+            <p class="pay"></p>
+          </dvi>
+        </div>
+      </div>
+      <!-- Completed results end -->
     </div>
   </main>
-
-  <!-- Completed results start -->
-
-  <!-- Your results
-
-  Your results are shown below based on the information you provided. 
-  To adjust the results, edit the form and click “calculate repayments” again.
-
-  Your monthly repayments
-
-  Total you'll repay over the term -->
-
-  <!-- Completed results end -->
   
   <footer>
     <div class="attribution">
@@ -69,5 +96,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </div>
   </footer>
+  <script src="./script.js"/>
 </body>
 </html>
