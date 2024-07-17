@@ -4,7 +4,8 @@ The projects are located inside this folder as in other repositories of this sam
 
 ## Main
 
-- [Blogr landing page ("NEW")](https://github.com/Marco90v/frontend-mentor/tree/master/blogr-landing-page-main)
+- [Mortgage repayment calculator ("NEW")](https://github.com/Marco90v/frontend-mentor/tree/master/mortgage-repayment-calculator-main)
+- [Blogr landing page](https://github.com/Marco90v/frontend-mentor/tree/master/blogr-landing-page-main)
 - [Agency landing page](https://github.com/Marco90v/frontend-mentor/tree/master/sunnyside-agency-landing-page-main)
 - [Interactive card details form](https://github.com/Marco90v/frontend-mentor/tree/master/interactive-card-details-form-main)
 - [Blog preview card](https://github.com/Marco90v/frontend-mentor/tree/master/blog-preview-card-main)
