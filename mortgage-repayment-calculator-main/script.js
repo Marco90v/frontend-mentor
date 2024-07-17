@@ -82,6 +82,7 @@ function handlerClick() {
             form.elements[index].checked = false;
         }
     }
+    showResult(0,0)
 }
 
 form.addEventListener("submit", handlerSubmit);
