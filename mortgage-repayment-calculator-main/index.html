@@ -21,20 +21,23 @@
             <span class="coin">£</span>
             <input type="number" name="amount" id="amount" min="0">
           </div>
+          <span class="error"></span>
         </div>
         <div class="inputGroup">
           <label for="term">Mortgage Term</label>
-          <div class="input">
+          <div class="input inputYears">
             <input type="number" name="term" id="term" min="0">
             <span class="years">years</span>
           </div>
+          <span class="error"></span>
         </div>
         <div class="inputGroup">
           <label for="rate">Interest Rate</label>
-          <div class="input">
+          <div class="input inputRate">
             <input type="number" name="rate" id="rate" min="0" step="any">
             <span class="percentage">%</span>
           </div>
+          <span class="error"></span>
         </div>
         <div class="type">
           <label for="radioContent">Mortgage Type</label>
@@ -46,6 +49,7 @@
             <input type="radio" name="type" id="only" value="only">
             <label for="only">Interest Only</label>
           </div>
+          <span class="error" id="typeError"></span>
         </div>
         <button type="submit">
           <picture>
