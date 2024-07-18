@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+:root{
+    /* ### Primary */
+    --SoftCyan: hsl(174, 77%, 80%); /*(Full Slider Bar)*/
+    --StrongCyan: hsl(174, 86%, 45%); /*(Slider Backround)*/
+    --LightGrayishRed: hsl(14, 92%, 95%); /*(Discount Background)*/
+    --LightRed: hsl(15, 100%, 70%); /*(Discount Text)*/
+    --PaleBlue: hsl(226, 100%, 87%); /*(CTA Text)*/
+
+    /* ### Neutral */
+    /*--White: hsl (0, 0%, 100%); /*(Pricing Component Background)*/
+    --White: hsl(0deg 0% 100%); /*(Pricing Component Background)*/
+    --VeryPaleBlue: hsl(230, 100%, 99%); /*(Main Background)*/
+    --LightGrayishBlue: hsl(224, 65%, 95%); /*(Empty Slider Bar)*/
+    --LightGrayishBlueTwo: hsl(223, 50%, 87%); /*(Toggle Background)*/
+    --GrayishBlue: hsl(225, 20%, 60%); /*(Text)*/
+    --DarkDesaturatedBlue: hsl(227, 35%, 25%); /*(Text & CTA Background)*/
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+body{
+    font-size: 15px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background-color: var(--VeryPaleBlue);
+}
+header{
+    height: 50vh;
+    padding: 7rem 2rem;
+    background-repeat: no-repeat, no-repeat;
+    background-image: url(./images/pattern-circles.svg), url(./images/bg-pattern.svg);
+    background-size: auto, 100% 100%;
+    background-position: center top 5rem, center;
+}
+h1{
+    text-align: center;
+    color: var(--DarkDesaturatedBlue);
+    font-size: 1.4rem;
+}
+header > p{
+    font-size: 1rem;
+    color: var(--GrayishBlue);
+    text-align: center;
+    padding: 1rem 3.5rem;
+}
+input[type='range'] {
+    margin: 0 1.5rem;
+    justify-self: center;
+    background: linear-gradient(90deg, var(--StrongCyan) 50%, var(--LightGrayishBlue) 50%);
+    border-radius: 5px;
+}
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input[type='range']::-webkit-slider-runnable-track {
+    height: 8px;
+    outline: none;
+    cursor: pointer;
+}
+input[type='range']::-webkit-slider-thumb {
+    margin-top: -15px;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background: var(--StrongCyan) url('./images/icon-slider.svg') no-repeat center center;
+    box-shadow: 0 12px 20px var(--SoftCyan);
+    cursor: pointer;
+}
+input[type='range']::-moz-range-thumb {
+    margin-top: -15px;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background: var(--StrongCyan) url('./images/icon-slider.svg') no-repeat center center;
+    box-shadow: 0 12px 20px var(--SoftCyan);
+    cursor: pointer;  
+}
+main{
+    position: absolute;
+    top: 28%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 0;
+    margin: 0 1.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    display: flex;
+    row-gap: 2rem;
+    flex-direction: column;
+    color: var(--GrayishBlue);
+    background-color: var(--White);
+    box-shadow: 0 10px 40px -20px rgba(46, 78, 150, 0.4);
+}
+ul{
+    list-style: none;
+}
+li{
+    margin-bottom: .5rem;
+}
+li > img{
+    margin-right: 1rem;
+}
+input[type="checkbox"]{
+    appearance: none;
+	width: 3rem;
+	height: 1.5rem; 
+	border-radius: 2rem;
+	background-color: var(--LightGrayishBlueTwo);
+	outline: 0;
+	display: block;
+	cursor: pointer;
+	transition: background-image 0.09s ease-in-out;
+	position: relative;
+	/* margin: 0 0.6rem; */
+    &:checked {
+        background-color: var(--SoftCyan);
+		&::after {
+			left: 1.4rem;
+		}
+	}
+    &:after {
+		content: '';
+		width: 1.5rem;
+		height: 1.5rem;
+		border-radius: 2rem;
+		background-color: white;
+		position: absolute;
+		transform: scale(0.7);
+		left: 0;
+		transition: left 0.09s ease-in-out;
+		box-shadow: 0 0.1rem rgba(0, 0, 0, 0.5);
+	}
+}
+button{
+    margin-top: 2rem;
+    font-weight: 800;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    color: var(--LightGrayishBlue);
+    background-color: var(--DarkDesaturatedBlue);
+    cursor: pointer;
+}
+hr{
+    border: solid 0.1rem var(--LightGrayishBlue);
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pages{
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+.priceMonth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+.price{
+    color: var(--DarkDesaturatedBlue);
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.discount{
+    display: flex;
+    margin: 0 1.5rem;
+    font-size: 0.9rem;
+    justify-content: space-between;
+}
+.alert{
+    padding: 0 0.5rem;
+    border-radius: 1rem;
+    color: var(--LightRed);
+    background-color: var(--LightGrayishRed);
+    /* width: 3rem;
+    display: block;
+    overflow: hidden;
+    height: 1.3rem; */
+}
+.alert.mobil{
+    display: initial;
+}
+.alert.desktop{
+    display: none;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media (width >= 650px) {
+    main{
+        margin: auto;
+        display: grid;
+        row-gap: 3rem;
+        max-width: 600px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+    }
+    main > div{
+        grid-column: 1 / 3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    input[type="range"]{
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        width: 80%;
+        margin: 0 -1rem;
+    }
+    hr{
+        grid-column: 1 / 3;
+    }
+    button{
+        margin: 0;
+    }
+    .discount{
+        justify-content: space-evenly;
+        margin-left: 10rem;
+        margin-right: 5rem;
+    }
+    .pages{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .alert.mobil{
+        display: none;
+    }
+    .alert.desktop{
+        display: initial;
+        margin-left: 0.5rem;
+    }
+}

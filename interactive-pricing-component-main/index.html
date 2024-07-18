@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+  <main>
+    <p class="pages"><span>100K</span> Pageviews</p>
+    <input type="range" name="range" id="range" min="0" max="100" value="50" step="25">
+    <p class="priceMonth"><span class="price">$16.00</span> / month</p>
+    <div class="discount">
+      <p>Monthly Billing</p>
+      <input type="checkbox" name="" id="">
+      <p>Yearly Billing 
+        <span class="alert mobil">-25%</span>
+        <span class="alert desktop">25% discount</span>
+      </p>
+    </div>
+    <hr>
+    <div>
+      <ul>
+        <li><img src="./images/icon-check.svg" alt="check"/>Unlimited websites</li>
+        <li><img src="./images/icon-check.svg" alt="check"/>100% data ownership</li>
+        <li><img src="./images/icon-check.svg" alt="check"/>Email reports</li>
+      </ul>
+      <button>Start my trial</button>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://marcovelasquezfigarella.netlify.app/" target="_blank">Marco Velasquez Figarella</a>.
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
