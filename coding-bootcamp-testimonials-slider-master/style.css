@@ -44,14 +44,13 @@ main{
     margin: auto;
 }
 ul{
-    /* overflow: scroll; */
     overflow: hidden;
     display: flex;
     list-style: none;
     width: 100%;
     background-image: url(./images/pattern-bg.svg), url(./images/pattern-quotes.svg);
     background-repeat: no-repeat;
-    background-size: 100%, 2rem;
+    background-size: 10.3rem, 2rem;
     background-position: top, center 11.4rem;
     padding: 1rem 0 0 0;
 }
@@ -125,3 +124,55 @@ p > span{
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+@media (width >= 1024px) {
+    main{
+        width: 1000px;
+    }
+    body{
+        background-size: 40% auto;
+    }
+    ul{
+        background-size: 60%, 3rem;
+        background-position: top right, 2.5rem 4rem;
+        padding: 1.5rem 0 2rem 0;
+    }
+    li{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    li picture{
+        margin-left: -3.5rem;
+    }
+    li img {
+        width: 14rem;
+    }
+    p{
+        text-align: left;
+        line-height: 1rem;
+    }
+    button{
+        cursor: pointer;
+        transition: background-color .25s ease-in-out;
+    }
+    button:hover{
+        background-color: var(--GrayishBlue);
+    }
+    .content{
+        width: 110%;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .description {
+        font-size: 0.8rem;
+        margin-top: 4rem;
+        line-height: 1.2rem;
+    }
+    .name{
+        flex-direction: row;
+        column-gap: 0.3rem;
+    }
+    .btns{
+        top: 84%;
+        left: 56%;
+    }
+}
