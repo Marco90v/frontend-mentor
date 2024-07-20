@@ -34,6 +34,10 @@ body{
     text-align: center;
 
     min-height: 100vh;
+    background-image: url(./images/pattern-curve.svg);
+    background-position: left bottom;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
 }
 main{
     width: 100%;
@@ -45,9 +49,10 @@ ul{
     display: flex;
     list-style: none;
     width: 100%;
-    background-image: url(./images/pattern-bg.svg);
+    background-image: url(./images/pattern-bg.svg), url(./images/pattern-quotes.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%, 2rem;
+    background-position: top, center 11.4rem;
     padding: 1rem 0 0 0;
 }
 li{
