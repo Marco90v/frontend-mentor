@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --DarkBlue: hsl(240, 38%, 20%);
+    --GrayishBlue: hsl(240, 18%, 77%);
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    font-size: 32px;
+}
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    font-size: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    min-height: 100vh;
+}
+main{
+    width: 100%;
+    margin: auto;
+}
+ul{
+    /* overflow: scroll; */
+    overflow: hidden;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    background-image: url(./images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 1rem 0 0 0;
+}
+li{
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+}
+li img{
+    width: 8rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.5rem 1rem -0.5rem var(--GrayishBlue);
+}
+button{
+    padding: .4rem .5rem;
+    background-color: transparent;
+}
+p{
+    /* font-size: .6rem; */
+    color: var(--DarkBlue);
+    line-height: 0.8rem;
+}
+p > span{
+    font-weight: 500;
+    color: var(--GrayishBlue);
+}
+.slider{
+    position: relative;
+    padding: 0 0.7rem;
+}
+.btns{
+    position: absolute;
+    top: 8.4rem;
+    left: 50%;
+    display: flex;
+    /* height: 1.5rem; */
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem -0.2rem var(--GrayishBlue);
+}
+.btns img{
+    width: 0.3rem;
+}
+.prev{
+    border-radius: 1rem 0 0 1rem;
+}
+.next{
+    border-radius: 0 1rem 1rem 0;
+}
+.description{
+    font-size: .6rem;
+    margin-top: 3rem;
+}
+.name{
+    /* width: 4rem; */
+    margin: auto;
+    margin-top: .5rem;
+    font-weight: 700;
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
