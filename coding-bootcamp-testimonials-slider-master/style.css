@@ -43,6 +43,9 @@ main{
     width: 100%;
     margin: auto;
 }
+h1{
+    display: none;
+}
 ul{
     overflow: hidden;
     display: flex;
