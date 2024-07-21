@@ -40,6 +40,8 @@ body{
 header{
     padding: 4rem 4rem;
     text-align: center;
+    width: 375px;
+    margin: auto;
 }
 h1{
     color: var(--GrayishBlue);
@@ -148,3 +150,61 @@ input[type="checkbox"]{
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+@media (width >= 1024px) {
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
+        background-size: 30%, 30%;
+        background-position: top 0rem right 0rem, bottom left -8rem;
+    }
+    main{
+        margin: auto;
+        height: 100%;
+    }
+    ul{
+        display: flex;
+    }
+    main > ul{
+        align-items: center;
+    }
+    header{
+        padding: 6rem 4rem;
+    }
+    input[type="checkbox"]{
+        cursor: pointer;
+    }
+    .primary > .content > button,
+    .secundary > .content > button{
+        border: .1rem solid transparent;
+        transition: all .25s ease-in-out;
+        cursor: pointer;
+    }
+    .primary > .content > button:hover{
+        --b: hsl(236, 72%, 79%);
+        border: .1rem solid var(--b);
+        background:white;
+        color: var(--b);
+    }
+    .secundary > .content > button:hover{
+        border: .1rem solid white;
+        background: transparent;
+        color: white;
+    }
+    .content > ul{
+        flex-direction: column;
+    }
+    .secundary{
+        padding: 1.5rem 0;
+    }
+    .card{
+        margin: 0;
+    }
+    .primary:first-child{
+        border-radius: .5rem 0 0 .5rem;
+    }
+    .primary:last-child{
+        border-radius: 0 .5rem .5rem 0;
+    }
+}
