@@ -4,7 +4,8 @@ The projects are located inside this folder as in other repositories of this sam
 
 ## Main
 
-- [Coding bootcamp testimonials slider ("NEW")](https://github.com/Marco90v/frontend-mentor/tree/master/coding-bootcamp-testimonials-slider-master)
+- [Pricing component with toggle ("NEW")](https://github.com/Marco90v/frontend-mentor/tree/master/pricing-component-with-toggle-master)
+- [Coding bootcamp testimonials slider](https://github.com/Marco90v/frontend-mentor/tree/master/coding-bootcamp-testimonials-slider-master)
 - [Interactive pricing component](https://github.com/Marco90v/frontend-mentor/tree/master/interactive-pricing-component-main)
 - [Mortgage repayment calculator](https://github.com/Marco90v/frontend-mentor/tree/master/mortgage-repayment-calculator-main)
 - [Blogr landing page](https://github.com/Marco90v/frontend-mentor/tree/master/blogr-landing-page-main)
