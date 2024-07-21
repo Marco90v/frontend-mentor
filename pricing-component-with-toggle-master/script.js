@@ -1,5 +1,5 @@
 const checkbox = document.querySelector("#switch");
-const priceInput = document.querySelectorAll("#price");
+const priceInput = document.querySelectorAll(".price");
 let action = true;
 const data = [
     [
