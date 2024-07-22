@@ -44,11 +44,10 @@ h1{
     display: none;
 }
 button{
-    background-color: var(--VeryDarkBlue);
-    /* padding: 1rem; */
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 0.7rem;
+    background-color: var(--VeryDarkBlue);
 }
 .content1{
     background-color: var(--DarkBlue);
@@ -128,3 +127,46 @@ button{
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+@media (width >= 1024px) {
+    body{
+        background-color: var(--VeryDarkBlue);
+        background-image: url(./images/bg-desktop.png);
+        background-size: 100% 50%;
+        background-position: center bottom;
+    }
+    main{
+        display: flex;
+        column-gap: 2rem;
+        width: 65rem;
+    }
+    button{
+        cursor: pointer;
+    }
+    .content2{
+        width: 100%;
+        margin-top: 4rem;
+        padding: 2rem 3rem;
+    }
+    .content2 > p{
+        text-align: left;
+    }
+    .gb{
+        bottom: auto;
+        top: -25%;
+        left: auto;
+        right: 3rem;
+        width: 13rem;
+        transform: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.7rem 0.7rem 0 0.7rem;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -1.5rem;
+            right: 0;
+            border-right: solid 2rem white;
+            border-bottom: solid 2rem transparent;
+            border-left: solid 2rem transparent;
+        }
+    }
+}
