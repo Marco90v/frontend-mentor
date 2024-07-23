@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    /* ### Primary */
+    --ModerateViolet: hsl(263, 55%, 52%);
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --VeryDarkBlackishBlue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    /* ### Neutral */
+    --LightGray: hsl(0, 0%, 81%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+}
+body{
+    background-color: var(--LightGrayishBlue);
+}
+main{
+    margin: 5rem 0;
+}
+h1{
+    display: none;
+}
+h2{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: var(--VeryDarkGrayishBlue);
+}
+h2 > span{
+    font-size: 0.85rem;
+    opacity: 50%;
+}
+h3{
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: var(--VeryDarkGrayishBlue);
+}
+article{
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--White);
+    box-shadow: 0 0.5rem 1rem -0.3rem var(--LightGray);
+}
+header{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+img{
+    width: 2.5rem;
+    border-radius: 100%;
+    border: solid 0.2rem transparent;
+    /* border: solid 0.2rem var(--ModerateViolet); */
+}
+p{
+    opacity: 70%;
+    line-height: 1.5rem;
+    color: var(--VeryDarkGrayishBlue);
+}
+.primary{
+    background-color: var(--ModerateViolet);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: 32%;
+    background-position: top right 1.5rem;
+}
+.primary > h3, .primary h2, .primary p,
+.tertiaty > h3, .tertiaty h2, .tertiaty p{
+    color: var(--LightGray);
+}
+.primary p{
+    padding-right: 2rem;
+}
+.primary img{
+    border: solid 0.2rem var(--LightGray);
+}
+.secundary{
+    background-color: var(--VeryDarkGrayishBlue);
+}
+.secundary > h3, .secundary h2, .secundary p{
+    color: var(--LightGrayishBlue);
+}
+.tertiaty{
+    background-color: var(--VeryDarkBlackishBlue);
+}
+.tertiaty p{
+    padding-right: 1rem;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
