@@ -4,7 +4,8 @@ The projects are located inside this folder as in other repositories of this sam
 
 ## Main
 
-- [Fylo data storage component ("NEW")](https://github.com/Marco90v/frontend-mentor/tree/master/fylo-data-storage-component-master)
+- [Testimonials grid section ("NEW")](https://github.com/Marco90v/frontend-mentor/tree/master/testimonials-grid-section-main)
+- [Fylo data storage component](https://github.com/Marco90v/frontend-mentor/tree/master/fylo-data-storage-component-master)
 - [Pricing component with toggle](https://github.com/Marco90v/frontend-mentor/tree/master/pricing-component-with-toggle-master)
 - [Coding bootcamp testimonials slider](https://github.com/Marco90v/frontend-mentor/tree/master/coding-bootcamp-testimonials-slider-master)
 - [Interactive pricing component](https://github.com/Marco90v/frontend-mentor/tree/master/interactive-pricing-component-main)
