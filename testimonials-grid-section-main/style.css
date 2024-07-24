@@ -65,7 +65,6 @@ img{
     width: 2.5rem;
     border-radius: 100%;
     border: solid 0.2rem transparent;
-    /* border: solid 0.2rem var(--ModerateViolet); */
 }
 p{
     opacity: 70%;
@@ -101,5 +100,43 @@ p{
 .tertiaty p{
     padding-right: 1rem;
 }
+.tertiaty img{
+    border: solid 0.2rem var(--ModerateViolet);
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (width >= 1024px) {
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        width: 1020px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+        margin: auto;
+    }
+    article{
+        margin: 0;
+    }
+    article:last-child{
+        grid-row: 1 / 3;
+        grid-column: 4 / 5;
+    }
+    .primary{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .secundary{
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    .tertiaty{
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+}
