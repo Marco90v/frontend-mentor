@@ -1,0 +1,31 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.iml
+
+# Dependencies & build
+node_modules/
+dist/
+build/
+.env
+.env.local
+
+# AI / OpenCode
+.atl/
+.opencode/
+
+# Logs
+*.log
